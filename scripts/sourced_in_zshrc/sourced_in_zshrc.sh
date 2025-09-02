@@ -1,8 +1,8 @@
 #!/bin/zsh
 
-# Get the directory where this script is located
+# Get script directory (in a way that works when sourced rather than executed)
 SCRIPT_DIR="$(dirname "${(%):-%x}")"
 
-source "$SCRIPT_DIR/make-the-shell-great-again.sh"
-source "$SCRIPT_DIR/personalize-the-shell.sh"
+source "$SCRIPT_DIR/customize_the_shell.sh"
+source "$SCRIPT_DIR/personalize_the_shell.sh"
 source "$SCRIPT_DIR/setup_cli_tools.sh"

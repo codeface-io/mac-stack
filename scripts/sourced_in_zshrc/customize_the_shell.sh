@@ -1,13 +1,14 @@
 #!/bin/zsh
 
-# You may use this script as a template to make a shell great again. It should not reference personal folders.
+# You may use this script as a template to customize the shell in general. It should not reference or set up anything personal or user-specific.
 
 # nice prompt
 export PROMPT='🍏%1~: '
 
-# working directory as tab title in iTerm (https://iterm2.com)
-DISABLE_AUTO_TITLE="true"
+# working directory as tab title
+DISABLE_AUTO_TITLE="true" # specifically for iTerm2 (https://iterm2.com)
 
+# working directory as tab title
 precmd() {
   # sets the tab title to current dir
   echo -ne "\e]1;${PWD##*/}\a"

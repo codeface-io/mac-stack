@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+# You may use this script as a template to setup CLI tooling. Most prominently these will be exports of environment variables and similar.
+
 # Setup Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
