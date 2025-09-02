@@ -9,9 +9,6 @@
 
 ## Niche Helper Apps
 
-- [OBS Studio](https://obsproject.com/)
-  - for screen recording with mic and system audio
-- [Focus](https://heyfocus.com/)
 - [Sound Control](https://staticz.com/soundcontrol/)
 - [loopback](https://rogueamoeba.com/loopback/)
 - [Adapter](https://macroplant.com/adapter)
