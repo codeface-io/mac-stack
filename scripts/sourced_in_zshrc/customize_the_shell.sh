@@ -95,3 +95,9 @@ unveil() {
         echo "✨ $base.md"
     done
 }
+
+# Alias for installing the latest Xcode version
+alias update-xcode="xcodes install --latest"
+
+# Alias for getting the latest Python version
+alias python-latest="pyenv install --list | grep -E '^\s*[0-9]+\.[0-9]+\.[0-9]+$' | tail -1 | xargs"

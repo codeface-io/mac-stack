@@ -28,7 +28,8 @@ cask "claude-code" # is a cask because it is a binary
 vscode "anthropic.claude-code"
 
 # Apple development
-mas "Xcode", id: 497799835
+brew "xcodes"
+cask "xcodes-app"
 mas "Developer", id: 640199958
 
 # Apple Fonts: https://developer.apple.com/fonts
