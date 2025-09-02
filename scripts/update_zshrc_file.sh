@@ -19,7 +19,7 @@ source \"$zshrc_setup_script\""
 
 ensure_zshrc_content "$script_call"
 
-# Ensure the global update command is in ~/.zshrc
+# Ensure the update alias is in ~/.zshrc
 
 echo "✨ Ensuring \`update\` alias is in .zshrc ..."
 

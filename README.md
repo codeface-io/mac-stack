@@ -2,7 +2,7 @@
 
 ## What is this?
 
-This project allows to define, set up and update a developer Mac.
+This project allows me to set up or update a developer Mac with one command.
 
 In principle, this covers the complete software stack, including command line tools, apps, vs code extensions, fonts, dot files, programming languages, version managers and app settings.
 
@@ -13,6 +13,8 @@ The main entry point to the setup/update script is `update.sh`.
 ## How to
 
 * Define the main stack in the `Brewfile`
+* Define additional installations in `scripts/update_other_software.sh`
+* Define shell personalizations in `scripts/sourced_in_zshrc/`
 * Run the script in its folder: `./update.sh`
 * Then you can use the alias from anywhere: `update`
 
