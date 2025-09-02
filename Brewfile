@@ -31,6 +31,12 @@ vscode "anthropic.claude-code"
 mas "Xcode", id: 497799835
 mas "Developer", id: 640199958
 
+# Apple Fonts: https://developer.apple.com/fonts
+cask "font-sf-pro" 
+cask "font-sf-compact"  
+cask "font-sf-mono"
+cask "font-new-york"
+
 # Python development
 brew "xz" # for installing certain Python versions via pyenv
 brew "pyenv" # python version manager
