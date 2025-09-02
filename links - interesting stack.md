@@ -1,8 +1,6 @@
-# Mac Stack Links
+# Interesting Stack
 
-## Interesting Stack
-
-### AI Coding
+## IDEs & AI Coding
 
 - [Kiro](https://kiro.dev)
 - [cline.bot](https://cline.bot)
@@ -13,12 +11,12 @@
 - [Fleet](https://www.jetbrains.com/fleet/)
 - [XcodesApp (GUI App for managing Xcode versions)](https://github.com/XcodesOrg/XcodesApp)
 
-### Building AI Agents
+## Building AI Agents
 
 - [n8n.io (local agent builder)](https://n8n.io)
   - [n8n.io - Tutorial](https://www.youtube.com/watch?v=ONgECvZNI3o)
 
-### PC Hardware
+## Linux/AI Hardware
 
 - [AMD Ryzen AI Max+ 395 PCs](https://docs.google.com/spreadsheets/d/1QOvILBE7BZHICVWJ1ylmlO3jIMig1HYW6gIeZ1jhQXE/)
 - [bee-link.com (mini PC)](https://www.bee-link.com/products/beelink-gtr9-pro-amd-ryzen-ai-max-395)
@@ -27,7 +25,7 @@
 - [kuycon.us (apple like monitors)](https://kuycon.us)
 - [lofree.co (mechanical keyboard)](https://www.lofree.co/products/lofree-flow-the-smoothest-mechanical-keyboard)
 
-### Other Software
+## Other Software
 
 - [ladybird.org (independent browser)](https://ladybird.org)
 - [mise.jdx.dev (macOS environment manager)](https://mise.jdx.dev)
