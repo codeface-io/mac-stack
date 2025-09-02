@@ -7,6 +7,10 @@
 - [Anthropic Console](https://console.anthropic.com)
 - [OpenAI Console](https://platform.openai.com)
 
+## Apple Development
+
+- [SF Symbols](https://developer.apple.com/sf-symbols)
+
 ## Niche Helper Apps
 
 - [Sound Control](https://staticz.com/soundcontrol/)
