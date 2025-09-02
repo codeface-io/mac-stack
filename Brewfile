@@ -1,9 +1,14 @@
+# All software available via homebrew: https://formulae.brew.sh
+
 # communication
 mas "Telegram", id: 747648890
 mas "WhatsApp", id: 310633997
 
-# writing, design, office
+# design, media
 cask "omnigraffle"
+cask "obs" # screen recording with mic and system audio
+
+# writing, office
 cask "typora"
 mas "Pages", id: 409201541
 mas "Keynote", id: 409183694
@@ -11,9 +16,10 @@ mas "Numbers", id: 409203825
 
 # basic developer tools
 brew "git"
+cask "focus"
 cask "font-fira-code" # monospaced font with coding ligatures
-cask "fork"
 cask "iterm2"
+cask "fork"
 
 # IDEs and coding agents
 cask "visual-studio-code" # for installing vs code extensions
