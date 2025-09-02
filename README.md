@@ -4,7 +4,7 @@
 
 This project allows me to update/setup a developer Mac with one command.
 
-In principle, this covers the complete software stack, including command line tools, apps, vs code extensions, fonts, dot files, programming languages, version managers and app settings.
+In principle, this covers the complete software stack, including command line tools, apps, VS Code extensions, fonts, dot files, programming languages, version managers and app settings.
 
 The stack is mostly defined declaratively in the [`Brewfile`](Brewfile). A few aspects that can't be captured in Brewfiles are additionally set up by the script.
 
