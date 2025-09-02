@@ -14,6 +14,11 @@ precmd() {
   echo -ne "\e]1;${PWD##*/}\a"
 }
 
+# Disable shell history file (~/.zsh_history) to keep home folder clean but also for privacy and security reasons
+HISTSIZE=10000  # allow in-memory history for current session
+SAVEHIST=0      # don't save any commands to ~/.zsh_history
+unset HISTFILE  # remove history file variable entirely
+
 # list folder content with useful options 
 alias lsl="ls -Fahl"
 
