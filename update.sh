@@ -3,12 +3,13 @@
 
 # Prepare
 set -e  # Exit on any error
-root_dir="$(realpath "$(dirname "$0")")"
-source "$root_dir/scripts/set_permissions_and_load_env.sh"
+set -u  # Treat unset variables as error
+export MAC_STACK_ROOT="$(realpath "$(dirname "$0")")"
+source "$MAC_STACK_ROOT/scripts/set_permissions_and_load_env.sh"
 
 # Run the scripts
-"$root_dir/scripts/update_homebrew_stack.sh"
-"$root_dir/scripts/update_zshrc_file.sh"
-"$root_dir/scripts/update_other_software.sh"
+"$MAC_STACK_ROOT/scripts/update_homebrew_stack.sh"
+"$MAC_STACK_ROOT/scripts/update_zshrc_file.sh"
+"$MAC_STACK_ROOT/scripts/update_other_software.sh"
 
 echo "✅ Did update (set up) this Mac"

@@ -4,14 +4,14 @@
 # Prepare
 
 set -e  # Exit on any error
-mac_root="$(realpath "$(dirname "$0")/..")"
-source "$mac_root/scripts/helpers.sh" # Load helpers
+set -u  # Treat unset variables as error
+source "$MAC_STACK_ROOT/scripts/helpers.sh" # Load helpers
 
 # Ensure the custom setup is loaded in ~/.zshrc
 
 echo "🔧 Ensuring custom setup is loaded in ~/.zshrc ..."
 
-zshrc_setup_script="$mac_root/scripts/sourced_in_zshrc/sourced_in_zshrc.sh"
+zshrc_setup_script="$MAC_STACK_ROOT/scripts/sourced_in_zshrc/sourced_in_zshrc.sh"
 assert_file_exists "$zshrc_setup_script"
 
 script_call="# Custom .zshrc setup
@@ -23,7 +23,7 @@ ensure_zshrc_content "$script_call"
 
 echo "✨ Ensuring \`update\` alias is in .zshrc ..."
 
-update_script="$mac_root/update.sh"
+update_script="$MAC_STACK_ROOT/update.sh"
 assert_file_exists "$update_script"
 
 update_alias_definition="# Alias for setting up or updating the whole system

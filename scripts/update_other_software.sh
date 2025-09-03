@@ -2,6 +2,7 @@
 # This script installs/updates software outside the homebrew stack
 
 set -e  # Exit on any error
+set -u  # Treat unset variables as error
 source ~/.zshrc  # Make aliases/functions available
 
 # Configure Git
@@ -21,8 +22,7 @@ gitignore_global="$HOME/.gitignore_global"
 
 if [[ ! -f "$gitignore_global" ]]; then
     echo "🐙 Creating ~/.gitignore_global since it doesn't exist ..."
-    scripts_dir="$(realpath "$(dirname "$0")")"
-    cp "$scripts_dir/.gitignore_global" "$gitignore_global"
+    cp "$MAC_STACK_ROOT/scripts/.gitignore_global" "$gitignore_global"
 fi
 
 # Install the latest python version and update its pip
