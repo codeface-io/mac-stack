@@ -35,9 +35,42 @@
 - Backup: `~/iCloud/backup/ssh/id_ed25519.pub` (public for verification)
 - Target: `~/.ssh/id_ed25519` (restored private key)
 
+## Files We DON'T Need to Touch
+
+### `.git-credentials`
+- **HTTPS-only**: Only used for PAT authentication
+- **Irrelevant for SSH**: SSH bypasses credential helpers entirely
+- **Keep existing**: Work PATs remain untouched
+
+### `~/.ssh/config` 
+- **Not needed for default key**: SSH auto-discovers `id_ed25519`
+- **Keep existing**: Work-specific configs remain
+- **Only needed for**: Custom key names or host-specific settings
+
+### `~/.ssh/known_hosts`
+- **Auto-populated**: First connection to GitHub prompts user once
+- **Self-maintaining**: SSH handles this automatically
+- **No automation needed**
+
+### `~/.gitconfig`
+- **Already handled**: Mac-stack automation sets user identity & preferences
+- **No SSH-specific config**: Git works with SSH out-of-the-box
+- **Credential helper ignored**: `osxkeychain` not used with SSH URLs
+
+### `~/.gitignore_global`
+- **Already handled**: Mac-stack creates/copies this file
+- **Independent of auth method**: Same for SSH or HTTPS
+
+### Additional Key Pairs
+- **Not needed**: One key (default key) can serve many services (GitHub, GitLab, servers, etc.)
+- **Leave work keys untouched**: Existing work keys remain for organizational requirements
+- **Separate concerns**: Default key for personal services, work keys for work
+- **No conflicts**: SSH config handles key selection per host when needed
+
 ## Benefits
 - ✅ Simple: No external tools required
 - ✅ Secure: Encrypted keys safe in cloud storage  
 - ✅ Automated: Copy + verify + prompt workflow
 - ✅ Flexible: User controls passphrase management
 - ✅ Idempotent: Safe to run multiple times
+- ✅ Non-destructive: Doesn't interfere with existing work setups
