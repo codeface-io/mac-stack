@@ -24,11 +24,24 @@
 - **Only prompt for passphrase** when restoration needed
 - **Derive public from private** to verify key pair integrity
 
+## .env Configuration Integration
+- **Centralized secrets**: Store SSH passphrase in `.env` file alongside other personal settings
+- **Unattended automation**: Enables script to run independently (e.g., nightly cron jobs)
+- **Decoupled key management**: Separates user's personal key/passphrase management from script execution
+- **Single input source**: All personal configurations in one place (Git settings, SSH passphrase, paths, etc.)
+- **Security**: Process-scoped variables that don't leak to system environment
+
+```bash
+# Example .env additions:
+SSH_PASSPHRASE="your-ssh-key-passphrase"
+ICLOUD_BACKUP_PATH="$HOME/Library/Mobile Documents/com~apple~CloudDocs/backup"
+```
+
 ## Implementation Flow
 1. Check if `~/.ssh/id_ed25519` exists and matches expected public key
 2. If match: skip restoration (no passphrase prompt)  
-3. If no match: restore from iCloud backup + verify + add to ssh-agent
-4. User manages passphrase however they prefer (keychain, 1Password, etc.)
+3. If no match: restore from iCloud backup + verify + add to ssh-agent using `$SSH_PASSPHRASE`
+4. Script can run fully unattended with all inputs from `.env`
 
 ## Files Involved
 - Backup: `~/iCloud/backup/ssh/id_ed25519` (encrypted private)
@@ -70,7 +83,9 @@
 ## Benefits
 - ✅ Simple: No external tools required
 - ✅ Secure: Encrypted keys safe in cloud storage  
-- ✅ Automated: Copy + verify + prompt workflow
-- ✅ Flexible: User controls passphrase management
+- ✅ Fully automated: Unattended execution with .env configuration
+- ✅ Centralized: All personal settings in single .env file
+- ✅ Flexible: User controls passphrase management (keychain, password manager, or .env)
 - ✅ Idempotent: Safe to run multiple times
 - ✅ Non-destructive: Doesn't interfere with existing work setups
+- ✅ Schedulable: Can run as cron job or nightly automation
