@@ -8,8 +8,8 @@ source ~/.zshrc  # Make aliases/functions available
 
 echo "🐙 Configuring Git ..."
 
-git config --global user.name "Sebastian Fichtner"
-git config --global user.email "sebastian@codeface.io"
+git config --global user.name "$GIT_USER_NAME"
+git config --global user.email "$GIT_USER_EMAIL"
 git config --global credential.helper osxkeychain
 git config --global core.excludesfile "~/.gitignore_global"
 git config --global core.editor "cursor --wait"
