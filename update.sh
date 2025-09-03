@@ -9,6 +9,12 @@ env_file="$absolute_dir/.env"
 
 if [[ -f "$env_file" ]]; then
     echo "📄 Loading .env file ..."
+    
+    # Ensure secure permissions on sensitive files
+    echo "🔒 Setting secure file permissions ..."
+    chmod 600 "$env_file"     # Only owner can read/write .env
+    chmod 700 "$absolute_dir" # Only owner can access project
+    
     set -a          # Automatically export all variables
     source "$env_file"
     set +a          # Turn off auto-export
