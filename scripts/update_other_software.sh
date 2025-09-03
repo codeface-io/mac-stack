@@ -20,7 +20,7 @@ git config --global push.default simple
 gitignore_global="$HOME/.gitignore_global"
 
 if [[ ! -f "$gitignore_global" ]]; then
-    echo "📝 Creating global gitignore file since none exists ..."
+    echo "🐙 Creating ~/.gitignore_global since it doesn't exist ..."
     scripts_dir="$(realpath "$(dirname "$0")")"
     cp "$scripts_dir/.gitignore_global" "$gitignore_global"
 fi
