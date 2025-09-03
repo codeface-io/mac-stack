@@ -12,6 +12,7 @@ The main entry point to the update/setup script is [`update.sh`](update.sh).
 
 ## How?
 
+* Copy the [`.env.example`](.env.example) file to an `.env` file in the root folder and customize that `.env` file. This `.env` file can contain passwords, it is not version controlled.
 * Define the main stack in the [`Brewfile`](Brewfile)
 * Do additional installations in [`scripts/update_other_software.sh`](scripts/update_other_software.sh)
 * Configure shell setup in [`scripts/sourced_in_zshrc`](scripts/sourced_in_zshrc)
