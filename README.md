@@ -20,6 +20,6 @@ The main entry point to the update/setup script is [`update.sh`](update.sh).
 
 ## To Do
 
-* Git configuration - User name, email, SSH keys for GitHub/GitLab
+* Git configuration: SSH key (for GitHub/GitLab)
 * install flutter - brewfile already contains fvm
 * apply IDE settings for VS Code and Cursor, including custom model instructions
