@@ -2,25 +2,38 @@
 
 ## What?
 
-This project allows me to update/setup a developer Mac with one command.
+This project allows me to `update`/setup a developer Mac with one command.
 
 In principle, this covers the complete software stack, including command line tools, apps, VS Code extensions, fonts, dot files, programming languages, version managers and app/system settings.
 
-The stack is mostly defined declaratively in the [`Brewfile`](Brewfile). A few aspects that can't be captured in Brewfiles are additionally set up by the script.
+The execution entry point is [`update.sh`](update.sh).
 
-The main entry point to the update/setup script is [`update.sh`](update.sh).
+The setup is defined by these components:
+* General input variables: `.env` file as examplified in [`.env.example`](.env.example)
+* Software stack: mostly declared in [`Brewfile`](Brewfile)
+* Shell customization: sourced scripts in [`sourced_in_zshrc`](scripts/sourced_in_zshrc)
+* Further setup: [`update_other_software.sh`](scripts/update_other_software.sh)
 
 ## How?
 
-* Copy the [`.env.example`](.env.example) file to an `.env` file in the root folder and customize that `.env` file. This `.env` file can contain passwords, it is not version controlled.
-* Define the main stack in the [`Brewfile`](Brewfile)
-* Do additional installations in [`scripts/update_other_software.sh`](scripts/update_other_software.sh)
-* Configure shell setup in [`scripts/sourced_in_zshrc`](scripts/sourced_in_zshrc)
-* Run the script in its folder: [`./update.sh`](update.sh)
-* After you ran `./update.sh` once, you can also use the alias from anywhere: `update`
+### First Time Setup
+
+On a fresh system that may not even have git authentication configured:
+
+1. Download this repository
+2. Copy [`.env.example`](.env.example), name the copy `.env`, customize `.env`
+3. Optional: Customize any of the components [listed above](#what)
+3. Run [`./update.sh`](update.sh)
+
+### Subsequent Updates
+
+After you have successfully set up the system once:
+
+1. Call the alias from anywhere: `update`
 
 ## To Do
 
-* Git configuration: SSH key (for GitHub/GitLab)
+* Default SSH key (for GitHub, GitLab etc.)
 * install flutter - brewfile already contains fvm
 * apply IDE settings for VS Code and Cursor, including custom model instructions
+* System (and app-) settings
