@@ -20,7 +20,7 @@ SAVEHIST=0      # don't save any commands to ~/.zsh_history
 unset HISTFILE  # remove history file variable entirely
 
 # list folder content with useful options 
-alias lsl="ls -Fahl"
+alias l="ls -Fahl"
 
 # print the paths in the $PATH variable as a readable list
 alias paths="echo $PATH | tr : '\n'"
@@ -49,7 +49,7 @@ alias log="git log" # this masks /usr/bin/log
 alias config="git config"
 alias init="git init"
 
-# Gitty: A "Save & Sync" Command for Your Code
+# gitty: A "Save & Sync" Command for Your Code
 #
 # This script automates the most common Git workflow: adding all changes,
 # committing them with a message, and pushing them to the remote repository.
@@ -84,7 +84,7 @@ gitty () {
     echo "🤪 https://www.urbandictionary.com/define.php?term=gitty"
 }
 
-# Unveil: Turns all PDFs in the current folder into Markdown files, using markitdown (https://github.com/microsoft/markitdown). Super useful for working with AI on local context.
+# unveil: Turns all PDFs in the current folder into Markdown files, using markitdown (https://github.com/microsoft/markitdown). Super useful for working with AI on local context.
 unveil() {
     if ! command -v markitdown &> /dev/null; then
         echo "markitdown not found (yet)."
@@ -97,19 +97,19 @@ unveil() {
     for pdf in *.pdf; do
         base="${pdf%.pdf}"
         PYTHONWARNINGS=ignore markitdown "$pdf" -o "$base.md" > /dev/null
-        echo "✨ $base.md"
+        echo "✅ $base.md"
     done
 }
 
-# D: Opens folder in IDE, opens current folder if none is provided
-# d stands for: Development environment, Develop, Debug, Distplay-/Dive into-/Dig into this folder, Discuss with AI-assistant (in IDE)
+# d: Opens folder in IDE, opens current folder if none is provided
+# "d" stands for: Development environment, Develop, Debug, Display, Dive into, Dig into, Discuss (with AI)
 d() {
     local target_dir="${1:-$(pwd)}"
 
     if [[ -d "$target_dir" ]]; then
         cursor "$target_dir"
     else
-        echo "Error: Directory '$target_dir' does not exist"
+        echo "🛑 Directory '$target_dir' does not exist"
         return 1
     fi
 }
