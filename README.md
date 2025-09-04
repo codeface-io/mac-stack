@@ -20,7 +20,7 @@ The setup is defined by these components:
 
 On a fresh system that may not even have GitHub authentication configured:
 
-1. Download this repository
+1. [Download this repository](https://github.com/codeface-io/mac-stack/archive/refs/heads/master.zip)
 2. Copy [`.env.example`](.env.example), name the copy `.env`, customize `.env`
 3. Optional: Customize any of the components [listed above](#what)
 4. Run [`./update.sh`](update.sh)
