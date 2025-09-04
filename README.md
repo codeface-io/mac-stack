@@ -37,7 +37,7 @@ After you have successfully set up the system once:
 
 Without customizing anything, the resulting setup is:
 
-1. Latest Homebrew installed
+1. Latest `brew` (Homebrew) installed
 2. Latest versions of everything declared in [`Brewfile`](Brewfile) installed
 3. Shell customized by `.zshrc` loading these files:
    - [`setup_cli_tools.sh`](scripts/sourced_in_zshrc/setup_cli_tools.sh): Necessary setup for CLI tools like `brew` and `pyenv`
@@ -45,10 +45,10 @@ Without customizing anything, the resulting setup is:
    - [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh): Highly individual customizations, you should probably delete or customize this file
 4. Global `update` alias for updating the system available
 5. Global git config has all necessary parameters plus basic best practice defaults
-6. Latest Python version installed via `pyenv` and selected as global Python 
+6. Latest `python` installed via `pyenv` and selected as global Python 
    - (Local projects pin their required python version anyways – either via `pyenv local` or by their virtual environments or both.)
-7. Latest version of `pip` installed for global Python
-8. `markitdown` installed via global `pip` so that [`unveil` function](scripts/sourced_in_zshrc/customize_the_shell.sh) works
+7. Latest `pip` installed for global Python
+8. Latest `markitdown` installed via global `pip` (needed by [`unveil` function](scripts/sourced_in_zshrc/customize_the_shell.sh))
 
 ## To Do
 
