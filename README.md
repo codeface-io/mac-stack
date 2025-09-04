@@ -9,9 +9,9 @@ In principle, this covers the complete software stack, including command line to
 The execution entry point is [`update.sh`](update.sh).
 
 The setup is defined by these components:
-* General input variables: `.env` file as examplified in [`.env.example`](.env.example)
+* General input variables: `.env` file as examplified by [`.env.example`](.env.example)
 * Software stack: mostly declared in [`Brewfile`](Brewfile)
-* Shell customization: sourced scripts in [`sourced_in_zshrc`](scripts/sourced_in_zshrc)
+* Shell customization (.zshrc): sourced scripts in [`sourced_in_zshrc`](scripts/sourced_in_zshrc)
 * Further setup: [`update_other_software.sh`](scripts/update_other_software.sh)
 
 ## How?
