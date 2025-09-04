@@ -35,20 +35,24 @@ After you have successfully set up the system once:
 
 ## Exact Default Setup
 
-Without customizing anything, the resulting setup is:
+Without customizing anything, the resulting setup has the **latest** versions of:
 
-1. Latest `brew` (Homebrew) installed
-2. Latest versions of everything declared in [`Brewfile`](Brewfile) installed
-3. Shell customized by `.zshrc` loading these files:
+1. `brew` (Homebrew)
+2. Everything declared in [`Brewfile`](Brewfile)
+3. Shell customizations via `.zshrc` loading three files:
    - [`setup_cli_tools.sh`](scripts/sourced_in_zshrc/setup_cli_tools.sh): Necessary setup for CLI tools like `brew` and `pyenv`
    - [`customize_the_shell.sh`](scripts/sourced_in_zshrc/customize_the_shell.sh): Includes useful aliases and functions like `gitty`, `unveil`, `update-xcode`, `python-latest`, `paths`
    - [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh): Highly individual customizations, you should probably delete or customize this file
-4. Global `update` alias for updating the system available
-5. Global git config has all necessary parameters plus basic best practice defaults
-6. Latest `python` installed via `pyenv` and selected as global Python 
-   - (Local projects pin their required python version anyways – either via `pyenv local` or by their virtual environments or both.)
-7. Latest `pip` installed for global Python
-8. Latest `markitdown` installed via global `pip` (needed by [`unveil` function](scripts/sourced_in_zshrc/customize_the_shell.sh))
+4. `update` alias
+5. `~/.gitconfig` (global git config)
+   - with all necessary parameters plus basic best practice defaults
+6. `python`
+   - installed via `pyenv` and set as global Python
+   - Local projects pin their required python version anyways – either via `pyenv local` or by their virtual environments or both.
+7. `pip` for global Python
+8. `markitdown`
+   - installed via global `pip`
+   - needed for [`unveil` function](scripts/sourced_in_zshrc/customize_the_shell.sh)
 
 ## To Do
 
