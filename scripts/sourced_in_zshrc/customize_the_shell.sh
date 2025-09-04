@@ -101,6 +101,19 @@ unveil() {
     done
 }
 
+# D: Opens folder in IDE, opens current folder if none is provided
+# d stands for: Development environment, Develop, Debug, Distplay-/Dive into-/Dig into this folder
+d() {
+    local target_dir="${1:-$(pwd)}"
+
+    if [[ -d "$target_dir" ]]; then
+        cursor "$target_dir"
+    else
+        echo "Error: Directory '$target_dir' does not exist"
+        return 1
+    fi
+}
+
 # Alias for installing the latest Xcode version
 alias update-xcode="xcodes install --latest"
 
