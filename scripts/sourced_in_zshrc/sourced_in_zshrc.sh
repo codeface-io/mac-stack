@@ -6,6 +6,6 @@ SCRIPT_DIR="$(dirname "${(%):-%x}")"
 source "$SCRIPT_DIR/setup_cli_tools.sh"
 source "$SCRIPT_DIR/customize_the_shell.sh"
 
-if [[ -f "$SCRIPT_DIR/personalize_the_shell.sh" ]]; then
+if (( $LOAD_SHELL_PERSONALIZATION_SCRIPT )); then
     source "$SCRIPT_DIR/personalize_the_shell.sh"
 fi

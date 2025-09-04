@@ -42,7 +42,7 @@ Without customizing anything, the resulting setup has the **latest** versions of
 3. Shell customizations from `.zshrc` loading three files:
    - [`setup_cli_tools.sh`](scripts/sourced_in_zshrc/setup_cli_tools.sh): Necessary setup for CLI tools like `brew` and `pyenv`
    - [`customize_the_shell.sh`](scripts/sourced_in_zshrc/customize_the_shell.sh): Includes aliases/functions: `gitty`, `unveil`, `update-xcode`, `paths` ...
-   - [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh): Highly individual customizations, you should delete or customize this file
+   - [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh): Highly individual customizations, deactivated in `.env` by default
 4. `update` alias
 5. `~/.gitconfig` (global git config)
    - with all necessary parameters plus basic best practice defaults
