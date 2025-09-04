@@ -1,4 +1,4 @@
-# My Stack
+# My Stack – Non-Automated Parts
 
 ## Web Apps
 

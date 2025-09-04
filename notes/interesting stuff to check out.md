@@ -1,4 +1,4 @@
-# Interesting Stack
+# Interesting
 
 ## IDEs & AI Coding
 
@@ -11,8 +11,9 @@
 - [Fleet](https://www.jetbrains.com/fleet/)
 - [XcodesApp (GUI App for managing Xcode versions)](https://github.com/XcodesOrg/XcodesApp)
 
-## Building AI Agents
+## Building AI Applications
 
+- [apertus.ai (Swiss transparent AI)](https://apertus.ai)
 - [n8n.io (local agent builder)](https://n8n.io)
   - [n8n.io - Tutorial](https://www.youtube.com/watch?v=ONgECvZNI3o)
 
