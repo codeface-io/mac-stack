@@ -24,7 +24,7 @@ On a fresh system that may not even have GitHub authentication configured:
 2. Copy [`.env.example`](.env.example), name the copy `.env`, customize `.env`
    - ⚠️ "Dot files" like `.env.example` are hidden by default.
    - Show/hide them by pressing `Command + Shift + .`
-3. Optional: Customize any of the components [listed above](#what)
+3. Optional: Customize any of the [components listed above](#what)
 4. Run [`./update.sh`](update.sh)
 
 ### Subsequent Updates
