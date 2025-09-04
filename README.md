@@ -39,7 +39,7 @@ Without customizing anything, the resulting setup has the **latest** versions of
 
 1. `brew` (Homebrew)
 2. Everything declared in [`Brewfile`](Brewfile)
-3. Shell customizations via `.zshrc` loading three files:
+3. Shell customizations from `.zshrc` loading three files:
    - [`setup_cli_tools.sh`](scripts/sourced_in_zshrc/setup_cli_tools.sh): Necessary setup for CLI tools like `brew` and `pyenv`
    - [`customize_the_shell.sh`](scripts/sourced_in_zshrc/customize_the_shell.sh): Includes useful aliases and functions like `gitty`, `unveil`, `update-xcode`, `python-latest`, `paths`
    - [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh): Highly individual customizations, you should probably delete or customize this file
