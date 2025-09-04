@@ -102,7 +102,7 @@ unveil() {
 }
 
 # D: Opens folder in IDE, opens current folder if none is provided
-# d stands for: Development environment, Develop, Debug, Distplay-/Dive into-/Dig into this folder
+# d stands for: Development environment, Develop, Debug, Distplay-/Dive into-/Dig into this folder, Discuss with AI-assistant (in IDE)
 d() {
     local target_dir="${1:-$(pwd)}"
 
