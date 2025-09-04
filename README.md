@@ -2,7 +2,7 @@
 
 ## What?
 
-This project allows me to `update`/setup a developer Mac with one command.
+Mac Stack allows to `update`/setup a developer Mac with one command.
 
 In principle, this covers the complete software stack, including command line tools, apps, VS Code extensions, fonts, dot files, programming languages, version managers and app/system settings.
 
@@ -16,7 +16,7 @@ The setup is defined by these components:
 
 ## How?
 
-### First Time Setup
+### First Time System Setup
 
 On a fresh system that may not even have GitHub authentication configured:
 
@@ -27,7 +27,7 @@ On a fresh system that may not even have GitHub authentication configured:
 3. Optional: Customize any of the [components listed above](#what)
 4. Run [`./update.sh`](update.sh)
 
-### Subsequent Updates
+### Subsequent System Updates
 
 After you have successfully set up the system once:
 
