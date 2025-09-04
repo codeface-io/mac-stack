@@ -22,6 +22,8 @@ On a fresh system that may not even have GitHub authentication configured:
 
 1. [Download this repository](https://github.com/codeface-io/mac-stack/archive/refs/heads/master.zip)
 2. Copy [`.env.example`](.env.example), name the copy `.env`, customize `.env`
+   - ⚠️ "Dot files" like `.env.example` are hidden by default.
+   - Show/hide them by pressing `Command + Shift + .`
 3. Optional: Customize any of the components [listed above](#what)
 4. Run [`./update.sh`](update.sh)
 
@@ -38,17 +40,17 @@ Without customizing anything, the resulting setup is:
 1. Latest Homebrew installed
 2. Latest versions of everything declared in [`Brewfile`](Brewfile) installed
 3. `.zshrc` loads all customizations in:
-  - [`setup_cli_tools`](scripts/sourced_in_zshrc/setup_cli_tools.sh)
-    - Necessary setup for CLI tools like `brew` and `pyenv`
-  - [`customize_the_shell`](scripts/sourced_in_zshrc/customize_the_shell.sh)
-    - Includes useful aliases and functions like `gitty`, `unveil`, `update-xcode`, `python-latest`, `paths`
-  - [`personalize_the_shell`](scripts/sourced_in_zshrc/personalize_the_shell.sh)
-    - Highly individual customizations, you should probably delete or customize this file
-4. `.zshrc` loads `update` alias for updating system form any directory
-5. Global git config has all necessary parameters plus some best practice defaults
-6. The latest Python version is installed via `pyenv` and selected as the global Python
-7. The latest version of `pip` is installed for the global Python
-8. `markitdown` is installed via the global `pip` so that the [`unveil` function](scripts/sourced_in_zshrc/customize_the_shell.sh) works
+   - [`setup_cli_tools`](scripts/sourced_in_zshrc/setup_cli_tools.sh)
+     - Necessary setup for CLI tools like `brew` and `pyenv`
+   - [`customize_the_shell`](scripts/sourced_in_zshrc/customize_the_shell.sh)
+     - Includes useful aliases and functions like `gitty`, `unveil`, `update-xcode`, `python-latest`, `paths`
+   - [`personalize_the_shell`](scripts/sourced_in_zshrc/personalize_the_shell.sh)
+     - Highly individual customizations, you should probably delete or customize this file
+4. Global `update` alias for updating the system available
+5. Global git config has all necessary parameters plus basic best practice defaults
+6. Latest Python version installed via `pyenv` and selected as global Python (projects pin their python version via virtual environments anyways)
+7. Latest version of `pip` installed for global Python
+8. `markitdown` installed via global `pip` so that [`unveil` function](scripts/sourced_in_zshrc/customize_the_shell.sh) works
 
 ## To Do
 
