@@ -46,7 +46,7 @@ Without customizing anything, the resulting setup is:
 4. Global `update` alias for updating the system available
 5. Global git config has all necessary parameters plus basic best practice defaults
 6. Latest Python version installed via `pyenv` and selected as global Python 
-   - projects pin their required python version anyways – either via `pyenv local` or by creating virtual environments or both
+   - (Local projects pin their required python version anyways – either via `pyenv local` or by their virtual environments or both.)
 7. Latest version of `pip` installed for global Python
 8. `markitdown` installed via global `pip` so that [`unveil` function](scripts/sourced_in_zshrc/customize_the_shell.sh) works
 
