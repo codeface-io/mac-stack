@@ -18,12 +18,12 @@ The setup is defined by these components:
 
 ### First Time Setup
 
-On a fresh system that may not even have git authentication configured:
+On a fresh system that may not even have GitHub authentication configured:
 
 1. Download this repository
 2. Copy [`.env.example`](.env.example), name the copy `.env`, customize `.env`
 3. Optional: Customize any of the components [listed above](#what)
-3. Run [`./update.sh`](update.sh)
+4. Run [`./update.sh`](update.sh)
 
 ### Subsequent Updates
 
