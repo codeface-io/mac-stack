@@ -41,8 +41,8 @@ Without customizing anything, the resulting setup has the **latest** versions of
 2. Everything declared in [`Brewfile`](Brewfile)
 3. Shell customizations from `.zshrc` loading three files:
    - [`setup_cli_tools.sh`](scripts/sourced_in_zshrc/setup_cli_tools.sh): Necessary setup for CLI tools like `brew` and `pyenv`
-   - [`customize_the_shell.sh`](scripts/sourced_in_zshrc/customize_the_shell.sh): Includes useful aliases and functions like `gitty`, `unveil`, `update-xcode`, `python-latest`, `paths`
-   - [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh): Highly individual customizations, you should probably delete or customize this file
+   - [`customize_the_shell.sh`](scripts/sourced_in_zshrc/customize_the_shell.sh): Includes aliases/functions like `gitty`, `unveil`, `update-xcode`, `python-latest`, `paths`
+   - [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh): Highly individual customizations, you should delete or customize this file
 4. `update` alias
 5. `~/.gitconfig` (global git config)
    - with all necessary parameters plus basic best practice defaults
