@@ -31,6 +31,25 @@ After you have successfully set up the system once:
 
 1. Call the alias from anywhere: `update`
 
+## Exact Default Setup
+
+Without customizing anything, the resulting setup is:
+
+1. Latest Homebrew installed
+2. Latest versions of everything declared in [`Brewfile`](Brewfile) installed
+3. `.zshrc` loads all customizations in:
+  - [`setup_cli_tools`](scripts/sourced_in_zshrc/setup_cli_tools.sh)
+    - Necessary setup for CLI tools like `brew` and `pyenv`
+  - [`customize_the_shell`](scripts/sourced_in_zshrc/customize_the_shell.sh)
+    - Includes useful aliases and functions like `gitty`, `unveil`, `update-xcode`, `python-latest`, `paths`
+  - [`personalize_the_shell`](scripts/sourced_in_zshrc/personalize_the_shell.sh)
+    - Highly individual customizations, you should probably delete or customize this file
+4. `.zshrc` loads `update` alias for updating system form any directory
+5. Global git config has all necessary parameters plus some best practice defaults
+6. The latest Python version is installed via `pyenv` and selected as the global Python
+7. The latest version of `pip` is installed for the global Python
+8. `markitdown` is installed via the global `pip` so that the [`unveil` function](scripts/sourced_in_zshrc/customize_the_shell.sh) works
+
 ## To Do
 
 * Default SSH key (for GitHub, GitLab etc.)
