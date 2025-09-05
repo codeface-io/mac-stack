@@ -71,11 +71,27 @@ gitty () {
 
     if [ -z "$changes" ]; then
         echo "🛑 No changes to commit"
-    elif [ -z "$1" ]; then
-        echo "🛑 No commit message"
     else
+        # Generate commit message
+        if [ -z "$1" ]; then
+            # Count changed files
+            file_count=$(echo "$changes" | wc -l)
+            
+            if [ "$file_count" -lt 4 ]; then
+                # Include file names for small changes
+                files=$(echo "$changes" | awk '{print $2}' | tr '\n' ', ' | sed 's/, $//')
+                commit_msg="Edit files: $files"
+            else
+                # Generic message for many changes
+                commit_msg="Edit $file_count files"
+            fi
+        else
+            commit_msg="$1"
+        fi
+        
+        # Stage, commit and push changes
         add .
-        commit -m "$1"
+        commit -m "$commit_msg"
         push
         lastCommit=$(log --oneline -1)
         echo "✅ Pushed $lastCommit"
