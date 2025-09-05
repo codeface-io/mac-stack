@@ -44,8 +44,8 @@ Without customizing anything, the resulting setup has the **latest** versions of
    - [`customize_the_shell.sh`](scripts/sourced_in_zshrc/customize_the_shell.sh): Includes aliases/functions: `gitty`, `unveil`, `d`, `update-xcode`, `paths` ...
    - [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh): Highly individual customizations. Customize or delete this file.
 4. `update` alias
-5. `~/.gitconfig` (global git config)
-   - with all necessary parameters plus basic best practice defaults
+5. Necessary parameters in global git config (`~/.gitconfig`)
+   - other pre-existing parameters are preserved
    - `~/.gitignore_global` will be created if none existed yet
 6. `python`
    - installed via `pyenv` and set as global Python
