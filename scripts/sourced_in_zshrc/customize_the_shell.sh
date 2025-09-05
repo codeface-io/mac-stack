@@ -79,7 +79,7 @@ gitty () {
             
             if [ "$file_count" -lt 4 ]; then
                 # Include file names for small changes
-                files=$(echo "$changes" | awk '{print $2}' | tr '\n' ', ' | sed 's/, $//')
+                files=$(echo "$changes" | awk '{print $2}' | xargs basename | tr '\n' ', ' | sed 's/, *$//')
                 commit_msg="Edit files: $files"
             else
                 # Generic message for many changes
