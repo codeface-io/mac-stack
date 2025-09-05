@@ -14,9 +14,10 @@ These can be set up in Raycast. Before that make sure Raycast can find all apps:
 | Git Client | ⌥G | Fork |
 | Hear | ⌥H | Podcasts |
 | Internet | ⌥I | Brave Browser |
+| Jot Down | ⌥J | Stickies |
 | Listen | ⌥L | Music |
 | Messenger | ⌥M | WhatsApp |
-| Notes | ⌥N | Stickies |
+| News | ⌥N | X |
 | Outlook | ⌥O | Microsoft Outlook |
 | Passwords | ⌥P | Passwords |
 | Reminders | ⌥R | Reminders |
