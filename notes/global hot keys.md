@@ -13,13 +13,16 @@ These can be set up in Raycast. Before that make sure Raycast can find all apps:
 | Finder | ⌥F | Finder |
 | Git Client | ⌥G | Fork |
 | Hear | ⌥H | Podcasts |
-| Internet | ⌥I | Safari |
+| Internet | ⌥I | Brave Browser |
 | Listen | ⌥L | Music |
 | Messenger | ⌥M | WhatsApp |
 | Notes | ⌥N | Stickies |
+| Outlook | ⌥O | Microsoft Outlook |
 | Passwords | ⌥P | Passwords |
 | Reminders | ⌥R | Reminders |
 | System Settings | ⌥S | System Settings |
+| Terminal | ⌥T | iTerm |
 | Write | ⌥W | Typora |
 | Xcode | ⌥X | Xcode |
 | YouTube | ⌥Y | YouTube Subscriptions |
+| Zühlke | ⌥Z | Microsoft Teams |
