@@ -83,7 +83,7 @@ gitty () {
             
             if [ "$file_count" -lt 4 ]; then
                 # Include file names if less than 4 files were changed
-                files=$(echo "$changes" | sed 's/^...//' | while IFS= read -r file; do basename "$file"; done | awk 'NR>1{printf ", "} {printf "%s", $0} END{print ""}')
+                files=$(echo "$changes" | sed 's/^...//' | while IFS= read -r file; do basename "$file"; done | awk 'NR>1{printf ", "} {printf "%s", $0}')
                 commit_msg="Edit files: $files"
             else
                 # Generic message if more than 4 files were changed
