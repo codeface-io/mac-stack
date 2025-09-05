@@ -59,5 +59,6 @@ Without customizing anything, the resulting setup will be as follows, with all s
 
 * Default SSH key (for GitHub, GitLab etc.)
 * install flutter - brewfile already contains fvm
-* apply IDE settings for VS Code and Cursor, including custom model instructions
+* apply IDE settings: VS Code, Cursor, Xcode
+* macOS keyboard shortcuts
 * System (and app-) settings
