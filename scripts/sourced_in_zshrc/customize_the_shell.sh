@@ -76,7 +76,7 @@ gitty () {
     if [ -z "$changes" ]; then
         echo "🛑 No changes to commit"
     else
-        # Generate commit message
+        # Generate commit message if none is provided
         if [ -z "$1" ]; then
             # Count changed files
             file_count=$(echo "$changes" | wc -l)
