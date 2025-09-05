@@ -68,6 +68,46 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 60 '<dic
 - `62` = Notification Center
 - `64` = Do Not Disturb
 
+### **5. System Settings Locations:**
+
+#### **📍 Where to Find Each Shortcut Type:**
+- **Services**: System Settings → Keyboard → Keyboard Shortcuts → Services
+- **App Shortcuts**: System Settings → Keyboard → Keyboard Shortcuts → App Shortcuts
+- **System Functions**: System Settings → Keyboard → Keyboard Shortcuts → (bottom section)
+- **Accessibility**: System Settings → Accessibility → Keyboard → Hardware
+
+#### **🎯 App Launching Shortcuts:**
+Global app launching shortcuts have **significant limitations** in modern macOS:
+
+**⚠️ Current Challenge:**
+- **Automator**: Deprecated (being phased out)
+- **Shortcuts App**: Modern replacement but **no command-line configuration**
+- **Services**: Still work but ecosystem is shrinking
+
+**Available Options:**
+
+**Option A: Legacy Automator (Still Works)**
+1. Open Automator → Create "Quick Action"
+2. Add "Launch Application" action → Select your app
+3. Save as service
+4. Set shortcut:
+```bash
+defaults write pbs NSServicesStatus -dict-add '"Launch My App"' '<dict><key>key_equivalent</key><string>^l</string></dict>'
+```
+
+**Option B: Third-party Tools (Recommended for CLI)**
+
+**Other Tools:**
+- **Alfred**: Has CLI configuration
+- **Keyboard Maestro**: Extensive scripting support
+- **BetterTouchTool**: Advanced automation
+
+
+**Option C: Manual Setup Only**
+- Create Shortcuts manually in Shortcuts app
+- Set keyboard shortcuts manually in System Settings
+- **No programmatic automation possible**
+
 ## 🔍 **Discovery Method (RECOMMENDED):**
 
 **The most reliable way to discover domains and codes:**
@@ -99,9 +139,33 @@ defaults write pbs NSServicesStatus -dict-add '"BundleID - MenuItem - Message"' 
 defaults write com.app.bundle NSUserKeyEquivalents -dict-add "Menu Item" "SHORTCUT"
 ```
 
-### **System/Global Shortcuts:**
+### **Global App Launching Shortcuts (⚠️ UNVERIFIED):**
+```bash
+# This may not work - the mechanism needs verification
+defaults write NSGlobalDomain NSUserKeyEquivalents -dict-add "Launch My App" "@~l"
+```
+
+### **System/Global Shortcuts (Mission Control, Spotlight, etc.):**
 ```bash
 defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add ID_NUMBER '<dict><key>enabled</key><true/><key>value</key><dict><key>parameters</key><array><integer>KEYCODE</integer><integer>MODIFIERS</integer><integer>0</integer></array><key>type</key><string>standard</string></dict></dict>'
+```
+
+### **🚨 IMPORTANT: App Launching Shortcuts:**
+**DO NOT use `com.apple.symbolichotkeys`** for launching apps!
+
+**Why not?** Symbolic hotkeys are **predefined system functions** only:
+- `60` = Spotlight
+- `32` = Mission Control
+- `36` = Launchpad
+- `79-82` = Desktop switching
+- etc.
+
+They **cannot** be programmed to launch arbitrary apps or run scripts.
+
+**For app launching, Services are the only programmatic option:**
+```bash
+# Create Automator service, then set shortcut:
+defaults write pbs NSServicesStatus -dict-add '"Launch My App"' '<dict><key>key_equivalent</key><string>^l</string></dict>'
 ```
 
 ## 🔑 **Key Insights:**
@@ -111,3 +175,5 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add ID_NUMBE
 - **Domains vary** by shortcut type and location in System Settings
 - **Key format is critical** - must match System Settings exactly
 - **System shortcuts** use numeric IDs and complex parameter arrays
+- **Symbolic hotkeys are predefined** - cannot launch arbitrary apps
+- **🚨 App launching shortcuts**: Major limitation - Automator deprecated, Shortcuts has no CLI
