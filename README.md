@@ -35,7 +35,7 @@ After you have successfully set up the system once:
 
 ## Exact Default Setup
 
-Without customizing anything, the resulting setup has the **latest** versions of:
+Without customizing anything, the resulting setup will be as follows, with all software being **updated to its latest version**:
 
 1. `brew` (Homebrew)
 2. Everything declared in [`Brewfile`](Brewfile)
