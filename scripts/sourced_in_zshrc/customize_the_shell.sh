@@ -49,19 +49,23 @@ alias log="git log" # this masks /usr/bin/log
 alias config="git config"
 alias init="git init"
 
-# gitty: A "Save & Sync" Command for Your Code
+# gitty: A "Save & Sync" Command for git. It commits and pushes all changes.
+#
+# USAGE:
+# `gitty "Your commit message here"`
+# or even without a commit message:
+# `gitty`
 #
 # This script automates the most common Git workflow: adding all changes,
 # committing them with a message, and pushing them to the remote repository.
+# If no commit message is provided, a generic message is generated based on
+# the number of changed files.
 #
 # WHY IT'S USEFUL:
 # It's designed for a rapid development cycle where you commit frequently
 # and push immediately for backup and collaboration. This streamlines the
 # 98% of Git usage that is "add all -> commit -> push", removing repetitive
 # steps while still requiring a thoughtful commit message.
-#
-# USAGE:
-# gitty "Your commit message here"
 #
 # For the 2% of cases requiring more granular control (like selective
 # staging or complex branch operations), the standard Git commands can
