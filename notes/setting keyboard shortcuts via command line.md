@@ -17,15 +17,41 @@ killall Finder && killall SystemUIServer
 ## 📋 **What We Learned: Domains & Key Formats**
 
 ### **1. Domains Discovered:**
+
+#### **🎯 Core Shortcut Types:**
 - **`pbs NSServicesStatus`** → Services shortcuts (Files and Folders → Services)
 - **`NSGlobalDomain NSUserKeyEquivalents`** → App-specific menu shortcuts
-- **`~/Library/Preferences/com.apple.ServicesMenu.Services.plist`** → Services registration
+- **`com.apple.symbolichotkeys AppleSymbolicHotKeys`** → System-wide shortcuts (Mission Control, Spotlight, etc.)
 
-### **2. Key Formats:**
-- **Services**: `"BundleID - MenuItem - Message"`
-  - Example: `"com.googlecode.iterm2 - New iTerm2 Tab Here - openTab"`
-- **App Shortcuts**: Just the menu item text
-  - Example: `"New Folder"`
+#### **📱 Specialized Domains:**
+- **`~/Library/Preferences/com.apple.ServicesMenu.Services.plist`** → Services registration
+- **`com.apple.universalaccess`** → Accessibility shortcuts
+- **`com.apple.screencapture`** → Screenshot shortcuts
+- **`com.apple.spotlight`** → Spotlight shortcuts
+- **`com.apple.dock`** → Dock shortcuts
+
+### **2. Key Formats by Type:**
+
+#### **Services Shortcuts:**
+```bash
+defaults write pbs NSServicesStatus -dict-add '"BundleID - MenuItem - Message"' '<dict><key>key_equivalent</key><string>^t</string></dict>'
+```
+- Format: `"BundleID - MenuItem - Message"`
+- Example: `"com.googlecode.iterm2 - New iTerm2 Tab Here - openTab"`
+
+#### **App Menu Shortcuts:**
+```bash
+defaults write com.app.bundle NSUserKeyEquivalents -dict-add "Menu Item" "SHORTCUT"
+```
+- Format: Just the menu item text
+- Example: `"New Folder"`
+
+#### **System Symbolic Hotkeys:**
+```bash
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 60 '<dict><key>enabled</key><true/><key>value</key><dict><key>parameters</key><array><integer>32</integer><integer>49</integer><integer>262144</integer></array><key>type</key><string>standard</string></dict></dict>'
+```
+- Format: Numeric IDs with complex parameter arrays
+- Example: Spotlight (ID 60), Mission Control (ID 32), etc.
 
 ### **3. Shortcut Codes:**
 - `^` = Control
@@ -33,6 +59,14 @@ killall Finder && killall SystemUIServer
 - `~` = Option/Alt
 - `$` = Shift
 - Example: `^t` = Ctrl+T, `@$n` = Cmd+Shift+N
+
+### **4. System Shortcut IDs (Common Ones):**
+- `60` = Spotlight
+- `32` = Mission Control
+- `33` = Show Desktop
+- `36` = Launchpad
+- `62` = Notification Center
+- `64` = Do Not Disturb
 
 ## 🔍 **Discovery Method (RECOMMENDED):**
 
@@ -53,17 +87,27 @@ killall Finder && killall SystemUIServer
 * https://ryanmo.co/2017/01/05/setting-keyboard-shortcuts-from-terminal-in-macos/
 * https://stackoverflow.com/questions/45601543/how-to-get-macos-keyboard-shortcuts-set-in-system-preferences-programmatically
 
-## 🎯 **General Pattern:**
-```bash
-# For Services shortcuts:
-defaults write pbs NSServicesStatus -dict-add '"BundleID - MenuItem - Message"' '<dict><key>key_equivalent</key><string>SHORTCUT</string></dict>'
+## 🎯 **General Patterns by Shortcut Type:**
 
-# For App shortcuts:
+### **Services Shortcuts:**
+```bash
+defaults write pbs NSServicesStatus -dict-add '"BundleID - MenuItem - Message"' '<dict><key>key_equivalent</key><string>SHORTCUT</string></dict>'
+```
+
+### **App Menu Shortcuts:**
+```bash
 defaults write com.app.bundle NSUserKeyEquivalents -dict-add "Menu Item" "SHORTCUT"
 ```
 
+### **System/Global Shortcuts:**
+```bash
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add ID_NUMBER '<dict><key>enabled</key><true/><key>value</key><dict><key>parameters</key><array><integer>KEYCODE</integer><integer>MODIFIERS</integer><integer>0</integer></array><key>type</key><string>standard</string></dict></dict>'
+```
+
 ## 🔑 **Key Insights:**
-- **No official documentation** - it's reverse-engineered
-- **Best method**: Set manually, capture the result
-- **Domains vary** by shortcut type (Services vs App menus)
+- **Three main types**: Services, App menus, System shortcuts
+- **No official documentation** - everything reverse-engineered
+- **Best discovery method**: Set manually in System Settings, capture with `defaults read`
+- **Domains vary** by shortcut type and location in System Settings
 - **Key format is critical** - must match System Settings exactly
+- **System shortcuts** use numeric IDs and complex parameter arrays
