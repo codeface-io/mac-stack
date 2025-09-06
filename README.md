@@ -44,7 +44,7 @@ After you have successfully set up the system once:
 Without customizing anything, the resulting setup will be as follows, with all software being **updated to its latest version**:
 
 1. `brew` (Homebrew itself)
-2. `brew` packages that were already installed (are updated)
+2. `brew` packages that were already installed
 3. [`Brewfile`](Brewfile) contents (all software it declares) 
 4. `brew` system cleaned up
    - deleted orphaned dependencies, old package versions and cache
