@@ -59,7 +59,7 @@ Without customizing anything, the resulting setup will be as follows, with all s
    - `~/.gitignore_global` created if none existed yet
 7. `python`
    - installed via `pyenv` and set as global Python
-   - updating global Python is fine because local Python projects pin their required Python version anyways – either via `pyenv local` or by their virtual environment or both
+   - updating global Python is fine because local Python projects should pin their required Python version anyways – either via `pyenv local` or by their virtual environment or both
 8. `pip` for global Python
 9. `markitdown`
    - installed via global `pip`
