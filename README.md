@@ -44,7 +44,7 @@ After you have successfully set up the system once:
 Without customizing anything, the resulting setup will be as follows, with all software being **updated to its latest version**:
 
 1. `brew` (Homebrew)
-2. [`Brewfile` contents](Brewfile) (all software it declares) 
+2. [`Brewfile`](Brewfile) contents (all software it declares) 
 3. `brew` system cleaned up
    - deleted orphaned dependencies, old package versions and cache
 4. `~/.zshrc` sources various shell customizations from three files:
