@@ -19,14 +19,13 @@ cask "brave-browser"
 brew "git"
 cask "focus"
 cask "font-fira-code" # monospaced font with coding ligatures
-cask "warp"
 cask "fork"
 cask "raycast"
 
 # IDEs and coding agents
-cask "visual-studio-code" # for installing vs code extensions
+cask "warp" # serves as terminal, coding agent and IDE
 cask "cursor"
-cask "claude-code" # is a cask because it is a binary
+cask "claude-code" # (is a cask because it is a binary)
 vscode "anthropic.claude-code"
 
 # Apple development
@@ -41,15 +40,16 @@ cask "font-sf-mono"
 cask "font-new-york"
 
 # Python development
-brew "xz" # for installing certain Python versions via pyenv
+brew "xz" # Required for installing certain Python versions via pyenv
 brew "pyenv" # python version manager
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 
 # Flutter development
-tap "leoafarias/fvm"
+tap "leoafarias/fvm" # Required for installing fvm
 brew "fvm" # flutter version manager
 
-# general dependencies
-brew "mas" # for installing mac app store apps
+# Required dependencies for Brewfile (do not remove)
+brew "mas" # ⚠️ Required for declaring mac app store apps
+cask "visual-studio-code" # ⚠️ Required for declaring vs code extensions
