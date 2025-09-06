@@ -20,12 +20,13 @@ The setup is defined by these components:
 
 On a fresh system that may not even have GitHub authentication configured:
 
-1. [Download this repository](https://github.com/codeface-io/mac-stack/archive/refs/heads/master.zip)
-2. Copy [`.env.example`](.env.example), name the copy `.env`, customize `.env`
+1. Make sure your [iCloud account is set up](https://support.apple.com/en-us/102314), so that Mac App Store apps can be installed automatically.
+2. [Download this repository](https://github.com/codeface-io/mac-stack/archive/refs/heads/master.zip)
+3. Copy [`.env.example`](.env.example), name the copy `.env`, customize `.env`
    - ⚠️ "Dot files" like `.env.example` are hidden by default.
    - Show/hide them by pressing `Command + Shift + .`
-3. Optional: Customize any of the [components listed above](#what)
-4. Run [`./update.sh`](update.sh)
+4. Optional: Customize any of the [components listed above](#what)
+5. Run [`./update.sh`](update.sh)
 
 There may be some remaining manual steps to complete the setup:
 
