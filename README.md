@@ -43,7 +43,7 @@ After you have successfully set up the system once:
 
 Without customizing anything, the resulting setup will be as follows.
 
-🧼 Note that all included software will be **UPDATED TO ITS LATEST VERSION**:
+🧼 Note: All included software (already installed or not) will get **UPDATED TO ITS LATEST VERSION**.
 
 1. `brew` (Homebrew itself)
 2. `brew` packages that were already installed
