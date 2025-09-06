@@ -17,7 +17,7 @@ These can be set up in Raycast. Before that make sure Raycast can find all apps:
 | Jot Down | ⌥J | Stickies |
 | Listen | ⌥L | Music |
 | Messenger | ⌥M | WhatsApp |
-| News | ⌥N | X |
+| News | ⌥N | X Pro |
 | Outlook | ⌥O | Microsoft Outlook |
 | Passwords | ⌥P | Passwords |
 | Reminders | ⌥R | Reminders |
