@@ -19,7 +19,7 @@ cask "brave-browser"
 brew "git"
 cask "focus"
 cask "font-fira-code" # monospaced font with coding ligatures
-cask "iterm2"
+cask "warp"
 cask "fork"
 cask "raycast"
 

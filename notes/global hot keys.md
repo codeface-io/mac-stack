@@ -22,7 +22,7 @@ These can be set up in Raycast. Before that make sure Raycast can find all apps:
 | Passwords | ⌥P | Passwords |
 | Reminders | ⌥R | Reminders |
 | System Settings | ⌥S | System Settings |
-| Terminal | ⌥T | iTerm |
+| Terminal | ⌥T | Warp |
 | Write | ⌥W | Typora |
 | Xcode | ⌥X | Xcode |
 | YouTube | ⌥Y | YouTube Subscriptions |
