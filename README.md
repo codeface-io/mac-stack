@@ -30,7 +30,7 @@ On a fresh system that may not even have GitHub authentication configured:
 
 There may be some remaining manual steps to complete the setup:
 
-* If Raycast is part of the setup (as with my default), [import Raycast settings from `.rayconfig` file](raycast/raycast.md#setup).
+* If Raycast is part of the setup (as with my default), [import Raycast settings from `.rayconfig` file](raycast/README.md#setup).
 
 ### Subsequent System Updates
 
