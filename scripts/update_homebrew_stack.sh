@@ -7,8 +7,14 @@ source "$MAC_STACK_ROOT/scripts/helpers.sh" # Load helpers
 
 # Install/update Homebrew
 
-echo "🍺 Installing/updating Homebrew ..."
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+if ! command -v brew >/dev/null 2>&1; then
+    echo "🍺 Installing Homebrew ..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+    # this avoids entering password and interactive confirmations
+    echo "🍺 Updating Homebrew ..."
+    /opt/homebrew/bin/brew update
+fi
 
 # Update pre-existing Homebrew packages (outside Brewfile)
 
