@@ -21,6 +21,7 @@ cask "focus"
 cask "font-fira-code" # monospaced font with coding ligatures
 cask "iterm2"
 cask "fork"
+cask "raycast"
 
 # IDEs and coding agents
 cask "visual-studio-code" # for installing vs code extensions
