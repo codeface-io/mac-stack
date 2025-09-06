@@ -97,11 +97,18 @@ gitty () {
         add .
         commit -m "$commit_msg"
         push
+
+        # Give feedback
+        echo "🤪 https://www.urbandictionary.com/define.php?term=gitty"
+
+        remote_url=$(git remote get-url origin 2>/dev/null)
+        if [ -n "$remote_url" ]; then
+            echo "🐙 $remote_url"
+        fi
+
         lastCommit=$(log --oneline -1)
         echo "✅ Pushed $lastCommit"
     fi
-
-    echo "🤪 https://www.urbandictionary.com/define.php?term=gitty"
 }
 
 # unveil: Turns all PDFs in the current folder into Markdown files, using markitdown (https://github.com/microsoft/markitdown). Super useful for working with AI on local context.
