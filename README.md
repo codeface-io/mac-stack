@@ -63,7 +63,7 @@ Without customizing anything, the resulting setup will be as follows, with all s
 8. `pip` for global Python
 9. `markitdown`
    - installed via global `pip`
-   - needed for [`unveil`](scripts/sourced_in_zshrc/customize_the_shell.sh) function
+   - required by [`unveil`](scripts/sourced_in_zshrc/customize_the_shell.sh) function
 
 ## To Do
 
