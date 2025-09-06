@@ -14,6 +14,8 @@ mas "Pages", id: 409201541
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 cask "brave-browser"
+mas "Microsoft Outlook", id: 985367838
+cask "microsoft-teams"
 
 # basic developer tools
 brew "git"
