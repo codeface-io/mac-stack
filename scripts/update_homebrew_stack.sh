@@ -16,3 +16,8 @@ echo "📦 Installing/updating software declared in Brewfile ..."
 brewfile="$MAC_STACK_ROOT/Brewfile"
 assert_file_exists "$brewfile"
 /opt/homebrew/bin/brew bundle install --upgrade --file "$brewfile"
+
+# Clean up Homebrew: cache, orphaned dependencies, old package versions
+
+echo "🧹 Cleaning up Homebrew: cache, orphaned dependencies, old package versions ..."
+/opt/homebrew/bin/brew cleanup
