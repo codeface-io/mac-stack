@@ -10,9 +10,14 @@ source "$MAC_STACK_ROOT/scripts/helpers.sh" # Load helpers
 echo "🍺 Installing/updating Homebrew ..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# Install/update software declared in Brewfile
+# Update pre-installed Homebrew packages (outside Brewfile)
 
-echo "📦 Installing/updating software declared in Brewfile ..."
+echo "🧼 Updating pre-installed Homebrew packages ..."
+/opt/homebrew/bin/brew upgrade
+
+# Install additional packages declared in Brewfile
+
+echo "📦 Installing additional packages declared in Brewfile ..."
 brewfile="$MAC_STACK_ROOT/Brewfile"
 assert_file_exists "$brewfile"
 /opt/homebrew/bin/brew bundle install --upgrade --file "$brewfile"

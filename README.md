@@ -43,25 +43,26 @@ After you have successfully set up the system once:
 
 Without customizing anything, the resulting setup will be as follows, with all software being **updated to its latest version**:
 
-1. `brew` (Homebrew)
-2. [`Brewfile`](Brewfile) contents (all software it declares) 
-3. `brew` system cleaned up
+1. `brew` (Homebrew itself)
+2. `brew` packages that were already installed (are updated)
+3. [`Brewfile`](Brewfile) contents (all software it declares) 
+4. `brew` system cleaned up
    - deleted orphaned dependencies, old package versions and cache
-4. `~/.zshrc` sources various shell customizations from three files:
+5. `~/.zshrc` sources various shell customizations from three files:
    - [`setup_cli_tools.sh`](scripts/sourced_in_zshrc/setup_cli_tools.sh): Necessary setup for CLI tools like `brew` and `pyenv`
    - [`customize_the_shell.sh`](scripts/sourced_in_zshrc/customize_the_shell.sh): General setup including prompt, aliases, functions
    - [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh): Highly individual setup, should be adapted or deleted
-5. `update` alias
+6. `update` alias
    - for triggering this whole update process from any directory
-6. `~/.gitconfig` (global git config)
+7. `~/.gitconfig` (global git config)
    - necessary parameters plus some basic best-practice ones
    - other pre-existing parameters are preserved
    - `~/.gitignore_global` created if none existed yet
-7. `python`
+8. `python`
    - installed via `pyenv` and set as global Python
    - updating global Python is fine because local Python projects should pin their required Python version anyways – either via `pyenv local` or by their virtual environment or both
-8. `pip` for global Python
-9. `markitdown`
+9. `pip` for global Python
+10. `markitdown`
    - installed via global `pip`
    - required by [`unveil`](scripts/sourced_in_zshrc/customize_the_shell.sh) function
 
