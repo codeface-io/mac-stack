@@ -11,7 +11,8 @@ if ! command -v brew >/dev/null 2>&1; then
     echo "🍺 Installing Homebrew ..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
-    # this avoids entering password and interactive confirmations
+    # side stepping the install script avoids entering password and other interactive hand holding
+    # that means when brew is already installed, the whole script can run unattended 
     echo "🍺 Updating Homebrew ..."
     brew update
 fi
