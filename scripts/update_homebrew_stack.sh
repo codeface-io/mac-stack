@@ -10,9 +10,9 @@ source "$MAC_STACK_ROOT/scripts/helpers.sh" # Load helpers
 echo "🍺 Installing/updating Homebrew ..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# Update pre-installed Homebrew packages (outside Brewfile)
+# Update pre-existing Homebrew packages (outside Brewfile)
 
-echo "🧼 Updating pre-installed Homebrew packages ..."
+echo "🧼 Updating pre-existing Homebrew packages ..."
 /opt/homebrew/bin/brew upgrade
 
 # Install additional packages declared in Brewfile
