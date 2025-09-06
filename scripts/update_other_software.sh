@@ -6,7 +6,7 @@ set -u  # Treat unset variables as error
 
 # Install the latest python version and update its pip
 
-source "$MAC_STACK_ROOT/scripts/customize_the_shell.sh" # load `python-latest` alias
+source "$MAC_STACK_ROOT/scripts/sourced_in_zshrc/customize_the_shell.sh" # load `python-latest` alias
 latest_python_version="$(python-latest)"
 echo "🐍 Installing latest python ($latest_python_version) and pip ..."
 pyenv install --skip-existing "$latest_python_version"
