@@ -17,7 +17,7 @@ echo "🧼 Updating pre-installed Homebrew packages ..."
 
 # Install additional packages declared in Brewfile
 
-echo "📦 Installing additional packages declared in Brewfile ..."
+echo "✨ Installing additional packages declared in Brewfile ..."
 brewfile="$MAC_STACK_ROOT/Brewfile"
 assert_file_exists "$brewfile"
 /opt/homebrew/bin/brew bundle install --upgrade --file "$brewfile"
