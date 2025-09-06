@@ -1,10 +1,12 @@
 # Raycast
 
+[Raycast](https://raycast.com/) has emerged as THE productivity helper for macOS, being highly customizable and covering **all imaginable conveniences** that macOS is glaringly missing, including global hot keys, a functioning emoji picker, window management, and clipboard history.
+
 ## Setup
 
 * To set up Raycast on a new machine without a paid Raycast Pro account, the easiest way is to export/import Raycast settings.
 * Raycast Settings → Advanced → Import / Export
-* So after changing Raycast settings, export them. This creates a password protected `.rayconfig` file. Store the file somewhere independent (in the cloud). And store the password somewhere secure (password manager).
+* So whenever you changed Raycast settings, remember to export them. This creates a password protected `.rayconfig` file. Store the file somewhere independent (in the cloud). And store the password somewhere secure (password manager).
 * Then on a new or additional machine, import your Raycast settings from your `.rayconfig` file using the corresponding password.
 
 ## Global Hot Keys
