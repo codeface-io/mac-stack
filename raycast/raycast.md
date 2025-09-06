@@ -1,9 +1,18 @@
-# Global Hot Keys
+# Raycast
+
+## Setup
+
+* To set up Raycast on a new machine without a paid Raycast Pro account, the easiest way is to export/import Raycast settings.
+* Raycast Settings → Advanced → Import / Export
+* So after changing Raycast settings, export them. This creates a password protected `.rayconfig` file. Store the file somewhere independent (in the cloud). And store the password somewhere secure (password manager).
+* Then on a new or additional machine, import your Raycast settings from your `.rayconfig` file using the corresponding password.
+
+## Global Hot Keys
 
 * These can be set up in Raycast
 * If you have apps in non-standard locations, tell Raycast about it: Raycast Settings → Extension → + → Add Application Directory → select additional directory, for example the Desktop
 
-## My Setup
+### My Setup
 
 | Intent | Shortcut | App/Website |
 |--------|---------|-----|

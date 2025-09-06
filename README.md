@@ -27,6 +27,10 @@ On a fresh system that may not even have GitHub authentication configured:
 3. Optional: Customize any of the [components listed above](#what)
 4. Run [`./update.sh`](update.sh)
 
+There may be some remaining manual steps to complete the setup:
+
+* If Raycast is part of the setup (as with my default), [import Raycast settings from `.rayconfig` file](raycast/raycast.md#setup).
+
 ### Subsequent System Updates
 
 After you have successfully set up the system once:
@@ -40,7 +44,7 @@ Without customizing anything, the resulting setup will be as follows, with all s
 1. `brew` (Homebrew)
 2. Everything declared in [`Brewfile`](Brewfile)
 3. Cleaned up Homebrew
-  - Orphaned dependencies, old package versions and cache will be cleared
+   - Orphaned dependencies, old package versions and cache will be cleared
 4. Shell customizations from `.zshrc` loading three files:
    - [`setup_cli_tools.sh`](scripts/sourced_in_zshrc/setup_cli_tools.sh): Necessary setup for CLI tools like `brew` and `pyenv`
    - [`customize_the_shell.sh`](scripts/sourced_in_zshrc/customize_the_shell.sh): Includes aliases/functions: `gitty`, `unveil`, `d`, `update-xcode`, `paths` ...
