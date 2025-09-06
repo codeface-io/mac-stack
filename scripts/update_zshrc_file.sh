@@ -21,7 +21,7 @@ ensure_zshrc_content "$script_call"
 
 # Ensure the update alias is in ~/.zshrc
 
-echo "✨ Ensuring \`update\` alias is in .zshrc ..."
+echo "🔧 Ensuring \`update\` alias is in .zshrc ..."
 
 update_script="$MAC_STACK_ROOT/update.sh"
 assert_file_exists "$update_script"
