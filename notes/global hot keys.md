@@ -1,6 +1,7 @@
 # Global Hot Keys
 
-These can be set up in Raycast. Before that make sure Raycast can find all apps: Raycast Settings -> Extension -> + -> Add Application Directory -> select additional directory, for example the Desktop
+* These can be set up in Raycast
+* If you have apps in non-standard locations, tell Raycast about it: Raycast Settings → Extension → + → Add Application Directory → select additional directory, for example the Desktop
 
 ## My Setup
 

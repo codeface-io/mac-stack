@@ -6,10 +6,8 @@
 - [cline.bot](https://cline.bot)
 - [opencode.ai](https://opencode.ai)
 - [kilocode.ai](https://kilocode.ai)
-- [warp.dev (AI coding agent / IDE / terminal)](https://www.warp.dev)
 - [Context7 (official documentations as context)](https://context7.com)
 - [Fleet](https://www.jetbrains.com/fleet/)
-- [XcodesApp (GUI App for managing Xcode versions)](https://github.com/XcodesOrg/XcodesApp)
 
 ## Building AI Applications
 
@@ -35,9 +33,7 @@
 - [Basecamp (project management)](https://basecamp.com)
 - [uv (python eco system manager)](https://github.com/astral-sh/uv)
 - [Hey (email + calendar)](https://www.hey.com)
-- [Brave (browser)](https://brave.com)
 - [Replicate (AI models)](https://replicate.com/)
-- [raycast.com (productivity)](https://www.raycast.com/)
 - [DigitalOcean (hosting)](https://www.digitalocean.com/)
   - [Cloud AI](https://www.digitalocean.com/products/ai-ml)
   - [AI Agent Builder](https://www.digitalocean.com/products/gen-ai)
