@@ -13,7 +13,7 @@ if ! command -v brew >/dev/null 2>&1; then
 else
     # this avoids entering password and interactive confirmations
     echo "🍺 Updating Homebrew ..."
-    /opt/homebrew/bin/brew update
+    brew update
 fi
 
 # Update pre-existing Homebrew packages (outside Brewfile)
