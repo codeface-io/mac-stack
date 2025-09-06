@@ -29,6 +29,7 @@ cask "warp" # serves as terminal, coding agent and IDE
 cask "cursor"
 cask "claude-code" # (is a cask because it is a binary)
 vscode "anthropic.claude-code"
+vscode "mathematic.vscode-pdf" # fast maintained PDF viewer
 
 # Apple development
 brew "xcodes"
