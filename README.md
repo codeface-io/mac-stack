@@ -44,20 +44,22 @@ After you have successfully set up the system once:
 Without customizing anything, the resulting setup will be as follows, with all software being **updated to its latest version**:
 
 1. `brew` (Homebrew)
-2. Everything declared in [`Brewfile`](Brewfile)
-3. Cleaned up Homebrew
-   - Orphaned dependencies, old package versions and cache will be cleared
-4. Shell customizations from `.zshrc` loading three files:
+2. [`Brewfile`](Brewfile) (all software it declares) 
+3. `brew` system cleaned up
+   - deleted orphaned dependencies, old package versions and cache
+4. `~/.zshrc` sources various shell customizations from three files:
    - [`setup_cli_tools.sh`](scripts/sourced_in_zshrc/setup_cli_tools.sh): Necessary setup for CLI tools like `brew` and `pyenv`
-   - [`customize_the_shell.sh`](scripts/sourced_in_zshrc/customize_the_shell.sh): Includes aliases/functions: `gitty`, `unveil`, `d`, `update-xcode`, `paths` ...
-   - [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh): Highly individual customizations. Customize or delete this file.
+   - [`customize_the_shell.sh`](scripts/sourced_in_zshrc/customize_the_shell.sh): General setup including prompt, aliases, functions
+   - [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh): Highly individual setup, should be adapted or deleted
 5. `update` alias
-6. Necessary parameters in global git config (`~/.gitconfig`)
+   - for triggering this whole update process from any directory
+6. `~/.gitconfig` (global git config)
+   - necessary parameters plus some basic best-practice ones
    - other pre-existing parameters are preserved
-   - `~/.gitignore_global` will be created if none existed yet
+   - `~/.gitignore_global` created if none existed yet
 7. `python`
    - installed via `pyenv` and set as global Python
-   - Local projects pin their required python version anyways – either via `pyenv local` or by their virtual environments or both.
+   - local projects pin their required python version anyways – either via `pyenv local` or by their virtual environment or both
 8. `pip` for global Python
 9. `markitdown`
    - installed via global `pip`
