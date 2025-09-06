@@ -16,7 +16,7 @@ The setup is defined by these components:
 
 ## How?
 
-### First Time System Setup
+### ✨ First Time System Setup
 
 On a fresh system that may not even have GitHub authentication configured:
 
@@ -33,7 +33,7 @@ There may be some remaining manual steps to complete the setup:
 
 * If Raycast is part of the setup (as with my default), [import Raycast settings from `.rayconfig` file](raycast/README.md#setup).
 
-### Subsequent System Updates
+### 🧼 Subsequent System Updates
 
 After you have successfully set up the system once:
 
