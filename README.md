@@ -25,7 +25,8 @@ On a fresh system that may not even have GitHub authentication configured:
 3. Copy [`.env.example`](.env.example), name the copy `.env`, customize `.env`
    - ⚠️ "Dot files" like `.env.example` are hidden by default.
    - Show/hide them by pressing `Command + Shift + .`
-4. Optional: Customize any of the [components listed above](#what)
+4. Technically Optional: Customize any of the [components listed above](#what)
+   - You probably want to customize or simply delete [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh)
 5. Run [`./update.sh`](update.sh)
 
 There may be some remaining manual steps to complete the setup:
