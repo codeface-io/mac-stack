@@ -19,9 +19,9 @@ The setup is defined by these components:
 ### 🎯 TLDR
 
    1. Define your system once by adapting [these components](#what)
-   2. Apply that definition by running [`./update.sh`](update.sh) (directly or via `update` alias).
+   2. Apply that definition by running [`./update.sh`](update.sh) (directly or via `update` alias)
    
-It makes no difference whether you've just installed macOS and need to set up this new machine or whether you want to repeatedly update your established machine. The update script is idempotent and works for both cases.
+It's irrelevant whether you've just installed macOS and need to set up this new machine or whether you want to repeatedly update your established machine. The update script is idempotent and works for both cases.
 
 ### ✨ First Time System Setup
 
