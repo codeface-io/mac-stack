@@ -4,15 +4,15 @@
 
 Mac Stack allows to update/setup a developer Mac with one command.
 
-This currently covers:
-  * Command line tools (like `brew`, `pyenv`, `git`, etc.)
-  * Extensive shell customizations (functions, aliases)
-  * Graphical apps (including Mac App Store apps)
-  * Dot files (.zshrc, .gitconfig, .gitignore_global)
-  * VS Code extensions
-  * Fonts
+It currently covers:
+  * ⌨️ Command line tools (like `brew`, `pyenv`, `git`)
+  * 🔧 Extensive shell customizations (prompt, functions, aliases)
+  * 🍏 Graphical apps (including Mac App Store apps)
+  * 🐙 Global git configuration
+  * 🧩 VS Code extensions
+  * 📰 Fonts
 
-The execution entry point is [`update.sh`](update.sh).
+### System Configuration
 
 The system configuration is determined by these components:
 * General variables: `.env` file as examplified by [`.env.example`](.env.example)
@@ -24,7 +24,7 @@ The system configuration is determined by these components:
 
 ### 🎯 TLDR
 
-   1. Define your system configuration once by adapting [these components](#what)
+   1. Define your system configuration once by adapting [these components](#system-configuration)
    2. Apply that configuration by running [`./update.sh`](update.sh) (directly or via `update` alias)
    
 It's irrelevant whether you've just installed macOS and need to set up this new machine or whether you want to repeatedly update your established machine. The update script is idempotent and works for both cases.
@@ -38,8 +38,8 @@ On a fresh system that may not even have GitHub authentication configured:
 3. Copy [`.env.example`](.env.example), name the copy `.env`, customize `.env`
    - "dot files" like `.env.example` are hidden by default
    - show/hide them by pressing `Command + Shift + .`
-4. Technically Optional: Customize any of the [components listed above](#what)
-   - you probably want to adapt or simply delete [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh)
+4. _Technically Optional_: Customize any of the other [components listed above](#system-configuration)
+   - you probably want to at least adapt or simply delete [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh)
 5. Run [`./update.sh`](update.sh)
 
 There may be some remaining manual steps to complete your setup:
