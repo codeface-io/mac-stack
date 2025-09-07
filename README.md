@@ -14,10 +14,10 @@ It currently covers:
 
 ### System Configuration
 
-The system configuration is determined by these components:
+The Mac's configuration is determined by these components:
 * General variables: `.env` file as examplified by [`.env.example`](.env.example)
 * Software stack: mostly declared in [`Brewfile`](Brewfile)
-* Shell customization (.zshrc): sourced scripts in [`sourced_in_zshrc/`](scripts/sourced_in_zshrc)
+* Shell customizations: scripts in [`sourced_in_zshrc/`](scripts/sourced_in_zshrc) folder
 * Further software setup: [`update_other_software.sh`](scripts/update_other_software.sh)
 
 ## How?
