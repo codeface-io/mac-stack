@@ -2,14 +2,20 @@
 
 ## What?
 
-Mac Stack allows to `update`/setup a developer Mac with one command.
+Mac Stack allows to update/setup a developer Mac with one command.
 
-In principle, this covers the complete software stack, including command line tools, apps, VS Code extensions, fonts, dot files, programming languages, version managers and app/system settings.
+This currently covers:
+  * Command line tools (like `brew`, `pyenv`, `git`, etc.)
+  * Extensive shell customizations (functions, aliases)
+  * Graphical apps (including Mac App Store apps)
+  * Dot files (.zshrc, .gitconfig, .gitignore_global)
+  * VS Code extensions
+  * Fonts
 
 The execution entry point is [`update.sh`](update.sh).
 
-The setup is defined by these components:
-* General input variables: `.env` file as examplified by [`.env.example`](.env.example)
+The system configuration is determined by these components:
+* General variables: `.env` file as examplified by [`.env.example`](.env.example)
 * Software stack: mostly declared in [`Brewfile`](Brewfile)
 * Shell customization (.zshrc): sourced scripts in [`sourced_in_zshrc/`](scripts/sourced_in_zshrc)
 * Further software setup: [`update_other_software.sh`](scripts/update_other_software.sh)
@@ -18,8 +24,8 @@ The setup is defined by these components:
 
 ### 🎯 TLDR
 
-   1. Define your system once by adapting [these components](#what)
-   2. Apply that definition by running [`./update.sh`](update.sh) (directly or via `update` alias)
+   1. Define your system configuration once by adapting [these components](#what)
+   2. Apply that configuration by running [`./update.sh`](update.sh) (directly or via `update` alias)
    
 It's irrelevant whether you've just installed macOS and need to set up this new machine or whether you want to repeatedly update your established machine. The update script is idempotent and works for both cases.
 
