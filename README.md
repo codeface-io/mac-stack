@@ -16,6 +16,13 @@ The setup is defined by these components:
 
 ## How?
 
+### 🎯 TLDR
+
+   1. Define your system once by adapting [these components](#what)
+   2. Apply that definition by running [`./update.sh`](update.sh) (directly or via `update` alias).
+   
+It makes no difference whether you've just installed macOS and need to set up this new machine or whether you want to repeatedly update your established machine. The update script is idempotent and works for both cases.
+
 ### ✨ First Time System Setup
 
 On a fresh system that may not even have GitHub authentication configured:
@@ -29,9 +36,10 @@ On a fresh system that may not even have GitHub authentication configured:
    - you probably want to adapt or simply delete [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh)
 5. Run [`./update.sh`](update.sh)
 
-There may be some remaining manual steps to complete the setup:
+There may be some remaining manual steps to complete your setup:
 
-* If Raycast is part of the setup (as with my default), [import Raycast settings from `.rayconfig` file](raycast/README.md#setup).
+* If Raycast is part of your setup, [import Raycast settings](raycast/README.md#setup) from your `.rayconfig` file.
+* If Cursor is part of your setup, restore your [`settings.json`](cursor/settings.json) backup to `~/Library/Application Support/Cursor/User/settings.json`.
 
 ### 🧼 Subsequent System Updates
 

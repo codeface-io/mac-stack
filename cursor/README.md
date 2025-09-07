@@ -1,0 +1,1 @@
+The [settings.json](settings.json) file holds the Cursor user settings and normally locates at `~/Library/Application Support/Cursor/User/settings.json`. One can just backup and restore that file manually. I'll try later to make Mack Stack automate this.

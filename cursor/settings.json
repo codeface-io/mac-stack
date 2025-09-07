@@ -1,0 +1,46 @@
+{
+    // window
+    "window.customTitleBarVisibility": "never",
+    "window.commandCenter": 1, // just means it's visible, 0 means hidden
+    "window.autoDetectColorScheme": true,
+
+    // workbench
+    "workbench.statusBar.visible": false,
+    "workbench.editor.showTabs": "none",
+    "workbench.editorAssociations": {},
+    "workbench.preferredLightColorTheme": "Default Light Modern",
+    "workbench.preferredDarkColorTheme": "Default Dark Modern",
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.layoutControl.enabled": false,
+
+    // editor
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "indent",
+    "editor.lineNumbers": "off",
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.stickyScroll.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+
+    // explorer
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+
+    // git
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+
+    // other
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "breadcrumbs.enabled": false,
+    "extensions.ignoreRecommendations": true,
+    "files.autoSave": "onFocusChange",
+    "python.createEnvironment.trigger": "off",
+    "update.releaseTrack": "prerelease",
+    
+    // cursor
+    "cursor.cpp.disabledLanguages": [],
+    "cursor.composer.textSizeScale": 1.15,
+    "cursor.composer.shouldAllowCustomModes": true
+}
