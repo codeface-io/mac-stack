@@ -146,3 +146,21 @@ alias update-xcode="xcodes install --latest"
 
 # Alias for getting the latest Python version
 alias python-latest="pyenv install --list | grep -E '^\s*[0-9]+\.[0-9]+\.[0-9]+$' | tail -1 | xargs"
+
+# hide-extensions: Hide all file extensions in the current directory
+hide-extensions() {
+  for file in *; do
+    if [ -f "$file" ]; then
+      SetFile -a E "$file"
+    fi
+  done
+}
+
+# show-extensions: Show all file extensions in the current directory
+show-extensions() {
+  for file in *; do
+    if [ -f "$file" ]; then
+      SetFile -a e "$file"
+    fi
+  done
+}
