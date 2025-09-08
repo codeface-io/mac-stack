@@ -67,9 +67,8 @@ gitty () {
     if [ -z "$changes" ]; then
         echo "🛑 No changes to commit"
     else
-        # Generate commit message if none is provided
         if [ -z "$1" ]; then
-            # Count changed files
+            # Generate commit message since none was provided
             file_count=$(echo "$changes" | wc -l)
             
             if [ "$file_count" -eq 1 ]; then
@@ -77,10 +76,10 @@ gitty () {
                 filename=$(basename "$filepath")
                 commit_msg="Edit file: $filename"
             else
-                # Generic message for multiple files
                 commit_msg="Edit $file_count files"
             fi
         else
+            # Use provided commit message
             commit_msg="$1"
         fi
         
