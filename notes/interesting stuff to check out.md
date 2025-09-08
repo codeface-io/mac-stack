@@ -26,6 +26,7 @@
 
 ## Other Software
 
+- [supercharge](https://sindresorhus.com/supercharge)
 - [ladybird.org (independent browser)](https://ladybird.org)
 - [mise.jdx.dev (macOS environment manager)](https://mise.jdx.dev)
 - [lazygit](https://github.com/jesseduffield/lazygit)
