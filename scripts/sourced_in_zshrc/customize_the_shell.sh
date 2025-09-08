@@ -73,7 +73,6 @@ gitty () {
             file_count=$(echo "$changes" | wc -l)
             
             if [ "$file_count" -eq 1 ]; then
-                # Include filename if only one file was changed
                 filepath=$(echo "$changes" | sed 's/^...//')
                 filename=$(basename "$filepath")
                 commit_msg="Edit file: $filename"
