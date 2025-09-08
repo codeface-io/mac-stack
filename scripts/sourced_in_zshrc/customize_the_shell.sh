@@ -5,15 +5,6 @@
 # nice prompt
 export PROMPT='🍏%1~: '
 
-# working directory as tab title
-DISABLE_AUTO_TITLE="true" # specifically for iTerm2 (https://iterm2.com)
-
-# working directory as tab title
-precmd() {
-  # sets the tab title to current dir
-  echo -ne "\e]1;${PWD##*/}\a"
-}
-
 # Disable shell history file (~/.zsh_history) to keep home folder clean but also for privacy and security reasons
 HISTSIZE=10000  # allow in-memory history for current session
 SAVEHIST=0      # don't save any commands to ~/.zsh_history
