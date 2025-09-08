@@ -16,7 +16,9 @@
 
 ### My Setup
 
-| Intent | Shortcut | App/Website |
+#### Launch Apps and Web Apps
+
+| Intent | Shortcut | App / Website |
 |--------|---------|-----|
 | AI Assistant | ⌥A | Grok |
 | Calendar | ⌥C | Calendar |
@@ -39,3 +41,9 @@
 | Xcode | ⌥X | Xcode |
 | YouTube | ⌥Y | YouTube Subscriptions |
 | Zühlke | ⌥Z | Microsoft Teams |
+
+#### Other Hot Keys
+
+| Intent | Shortcut | Raycast Action |
+|--------|---------|-----|
+| Switch Dark/Day Mode | ⌥D | Toggle System Appearance |
