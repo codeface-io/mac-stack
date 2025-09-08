@@ -46,4 +46,4 @@
 
 | Intent | Shortcut | Raycast Action |
 |--------|---------|-----|
-| Switch Dark/Day Mode | ⌥D | Toggle System Appearance |
+| Switch Dark/Day Mode | ⌥⇧D | Toggle System Appearance |
