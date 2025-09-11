@@ -55,6 +55,8 @@ This requires setup: Copy the scripts from [`scripts`](./scripts) to `~/.config/
 | Intent | Shortcut | Raycast Action |
 |--------|---------|-----|
 | Develop in folder | ⌥⇧D | Open folder in Cursor |
+| Create new file in folder | ⌥⇧F | Create new file in folder |
+| Write in folder | ⌥⇧W | Open folder in Typora |
 | Terminal in folder | ⌥⇧⏎ | Open folder in Warp |
 
 #### Control Settings and States
