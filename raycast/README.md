@@ -1,6 +1,6 @@
 # Raycast
 
-[Raycast](https://raycast.com/) has emerged as THE productivity helper for macOS, being highly customizable and covering **all imaginable conveniences** that macOS is glaringly missing, including global hot keys, a functioning emoji picker, window management, and clipboard history.
+[Raycast](https://raycast.com/) has emerged as THE productivity helper for macOS, being highly customizable, extensible and covering **all imaginable conveniences** that macOS glaringly lacks, including global hot keys, a functioning emoji picker, window management, and clipboard history.
 
 ## Setup
 
@@ -16,7 +16,11 @@
 
 ### My Setup
 
-#### Launch Apps and Web Apps
+It makes sense to build global hot keys around the option key. The option key does typically not interfere with the short cuts of apps (which use the command and control keys) and it already is what brings up raycast (option + space).
+
+#### Open: Apps, Web Apps, Workspaces
+
+⌥X for navigation:
 
 | Intent | Shortcut | App / Website |
 |--------|---------|-----|
@@ -36,14 +40,27 @@
 | Passwords | ⌥P | Passwords |
 | Reminders | ⌥R | Reminders |
 | System Settings | ⌥S | System Settings |
-| Terminal | ⌥T | Warp |
+| Terminal | ⌥⏎ | Warp |
 | Write | ⌥W | Typora |
-| Xcode | ⌥X | Xcode |
+| Xcode | ⌥X | Xcode |  
 | YouTube | ⌥Y | YouTube Subscriptions |
 | Zühlke | ⌥Z | Microsoft Teams |
 
-#### Other Hot Keys
+#### In Active Finder Folder
+
+This requires setup: Copy the scripts from [`scripts`](./scripts) to `~/.config/raycast/scripts`.
+
+⌥⇧X for navigation and actions in active Finder folder:
 
 | Intent | Shortcut | Raycast Action |
 |--------|---------|-----|
-| Switch Dark/Day Mode | ⌥⇧D | Toggle System Appearance |
+| Develop in folder | ⌥⇧D | Open folder in Cursor |
+| Terminal in folder | ⌥⇧⏎ | Open folder in Warp |
+
+#### Control Settings and States
+
+⌃X for controlling settings and states:
+
+| Intent | Shortcut | Raycast Action |
+|--------|---------|-----|
+| Switch Dark/Day Mode | ⌃D | Toggle System Appearance |

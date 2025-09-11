@@ -25,7 +25,7 @@ The Mac's configuration is determined by these components:
 ### 🎯 TLDR
 
    1. Define your system configuration once by adapting [these components](#system-configuration)
-   2. Apply that configuration by running [`./update.sh`](update.sh) (directly or via `update` alias)
+   2. Apply that configuration (repeatedly) by running [`./update.sh`](update.sh) (directly or via global `update` alias)
    
 It's irrelevant whether you've just installed macOS and need to set up this new machine or whether you want to repeatedly update your established machine. The update script is idempotent and works for both cases.
 
