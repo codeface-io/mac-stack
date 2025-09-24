@@ -9,6 +9,11 @@ cask "microsoft-teams"
 # design, media
 cask "omnigraffle"
 cask "obs" # screen recording with mic and system audio
+brew "ghostscript" # pdf support for imagemagick (which does not install ghostscript by itself)
+brew "imagemagick" # CLI tool for working with images (scale, crop, convert format ...)
+brew "pandoc" # universal document converter (markdown, HTML, LaTeX, docx, PDF ...)
+brew "weasyprint" # specialized HTML/CSS to PDF converter, preserves styling
+brew "ffmpeg" # industry-standard CLI video/audio converter/compressor/processor
 
 # writing, office
 cask "typora"
