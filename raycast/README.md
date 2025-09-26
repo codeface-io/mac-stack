@@ -16,13 +16,13 @@
 
 ### My Setup
 
-It makes sense to build global hot keys around the option key. The option key does typically not interfere with the short cuts of apps (which use the command and control keys) and it already is what brings up raycast (option + space).
+It makes sense to build global navigation hot keys around the option key. The option key does typically not interfere with the short cuts of apps (which use the command and control keys) and it already is what brings up raycast (option + space).
 
-#### Open: Apps, Web Apps, Workspaces
+#### Navigate to: Apps, Web Apps, Workspaces
 
 ⌥X for navigation:
 
-| Intent | Shortcut | App / Website |
+| Destination (Intent) | Shortcut | App / Website / Raycast Action |
 |--------|---------|-----|
 | AI Assistant | ⌥A | Grok |
 | Calendar | ⌥C | Calendar |
@@ -40,11 +40,12 @@ It makes sense to build global hot keys around the option key. The option key do
 | Passwords | ⌥P | Passwords |
 | Reminders | ⌥R | Reminders |
 | System Settings | ⌥S | System Settings |
-| Terminal | ⌥⏎ | Warp |
 | Write | ⌥W | Typora |
 | Xcode | ⌥X | Xcode |  
 | YouTube | ⌥Y | YouTube Subscriptions |
 | Zühlke | ⌥Z | Microsoft Teams |
+| Terminal | ⌥⏎ | Warp |
+| Trash | ⌥⌫ | Open Trash |
 
 #### In Active Finder Folder
 
@@ -61,8 +62,9 @@ This requires setup: Copy the scripts from [`scripts`](./scripts) to `~/.config/
 
 #### Control Settings and States
 
-⌃X for controlling settings and states:
+⌃X for controlling global settings and states:
 
 | Intent | Shortcut | Raycast Action |
 |--------|---------|-----|
 | Switch Dark/Day Mode | ⌃D | Toggle System Appearance |
+| Empty the Trash | ⌃⌫ | Empty Trash |
