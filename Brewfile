@@ -24,6 +24,7 @@ cask "brave-browser"
 
 # basic developer tools
 brew "git"
+cask "docker"
 cask "focus"
 cask "font-fira-code" # monospaced font with coding ligatures
 cask "fork"
