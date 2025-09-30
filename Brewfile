@@ -59,6 +59,6 @@ vscode "ms-python.vscode-pylance"
 tap "leoafarias/fvm" # Required for installing fvm
 brew "fvm" # flutter version manager
 
-# Required dependencies for Brewfile (do not remove)
-brew "mas" # ⚠️ Required for declaring mac app store apps
-cask "visual-studio-code" # ⚠️ Required for declaring vs code extensions
+# ⚠️ Required dependencies for Brewfile (do not remove)
+brew "mas" # for declaring mac app store apps
+cask "visual-studio-code" # for declaring vs code extensions
