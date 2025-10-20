@@ -24,7 +24,7 @@ cask "brave-browser"
 
 # basic developer tools
 brew "git"
-cask "docker" # "Docker Desktop" app plus `docker` CLI
+cask "docker-desktop" # "Docker Desktop" app plus `docker` CLI
 cask "focus"
 cask "font-fira-code" # monospaced font with coding ligatures
 cask "fork"
