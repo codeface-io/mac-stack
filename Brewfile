@@ -8,6 +8,7 @@ cask "microsoft-teams"
 
 # design, media
 cask "omnigraffle"
+mas "Hand Mirror", id: 1502839586 # for lecture recording https://handmirror.app
 cask "obs" # screen recording with mic and system audio
 brew "ghostscript" # pdf support for imagemagick (which does not install ghostscript by itself)
 brew "imagemagick" # CLI tool for working with images (scale, crop, convert format ...)
@@ -41,6 +42,7 @@ vscode "mathematic.vscode-pdf" # fast maintained PDF viewer
 brew "xcodes"
 cask "xcodes-app"
 mas "Developer", id: 640199958
+mas "Icon Generator", id: 1631880470 # for scaling macOS app icons
 
 # Apple Fonts: https://developer.apple.com/fonts
 cask "font-sf-pro" 
