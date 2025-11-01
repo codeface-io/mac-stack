@@ -88,8 +88,7 @@ Without customizing anything, the resulting setup will be as follows.
 
 ## To Do
 
-* Default SSH key (for GitHub, GitLab etc.)
-* install flutter - brewfile already contains fvm
-* apply IDE settings: VS Code, Cursor, Xcode
-* macOS keyboard shortcuts
+* [Default SSH key](notes/ssh_key_setup_brainstorm.md) (for GitHub, GitLab etc.)
 * System (and app-) settings
+* Flutter, fvm
+* Command for checking out or pulling all repos in a given folder
