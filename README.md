@@ -65,14 +65,14 @@ Without customizing anything, the resulting setup will be as follows.
 3. [`Brewfile`](Brewfile) contents (all software it declares)
    - 🎯 this is the central and largest part of the software stack
 4. `brew` system cleaned up
-   - deleted orphaned dependencies, old package versions and cache
+   - deleted old package versions and cache
 5. `~/.zshrc` loads (sources) various shell customizations from three files:
    - [`setup_cli_tools.sh`](scripts/sourced_in_zshrc/setup_cli_tools.sh): Necessary setup for CLI tools like `brew` and `pyenv`
    - [`customize_the_shell.sh`](scripts/sourced_in_zshrc/customize_the_shell.sh): General setup including prompt, aliases, functions
    - [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh): Highly individual setup, should be adapted or deleted
 6. `update` and `brew-cleanup` aliases for use from any directory
    - `update` triggers this whole update process
-   - `brew-cleanup` uninstalls all packages that are **not** (yet) in [`Brewfile`](Brewfile)
+   - `brew-cleanup` uninstalls all packages that are **not** (yet) in [`Brewfile`](Brewfile) as well as orphaned dependencies
 7. `~/.gitconfig` (global git config)
    - necessary parameters plus some basic best-practice ones
    - other pre-existing parameters are preserved
@@ -84,7 +84,7 @@ Without customizing anything, the resulting setup will be as follows.
 10. `markitdown`
     - installed via global `pip`
     - required by [`unveil`](scripts/sourced_in_zshrc/customize_the_shell.sh) function
-11. Cursor settings will be restored (overwritten) from backup if `CURSOR_RESTORE_BACKUP` is set `true` in [`.env`](.env) file.
+11. Cursor settings restored (overwritten) from backup if `CURSOR_RESTORE_BACKUP` is set `true` in [`.env`](.env) file.
 
 ## To Do
 
