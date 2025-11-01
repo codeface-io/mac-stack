@@ -1,4 +1,4 @@
-# All software available via homebrew can be searched here: https://formulae.brew.sh
+# All available homebrew packages can be searched here: https://formulae.brew.sh
 
 # communication
 mas "Telegram", id: 747648890
@@ -9,25 +9,28 @@ cask "microsoft-teams"
 # writing, diagramming, office
 cask "typora"
 mas "Pages", id: 409201541
-mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
+mas "Keynote", id: 409183694
 cask "omnigraffle"
+cask "miro"
 cask "brave-browser"
+cask "onedrive" # 
 
 # basic developer tools
-brew "git"
-cask "docker-desktop" # "Docker Desktop" app plus `docker` CLI
-cask "focus"
+brew "git"            # just so it gets updated frequently
+cask "fork"           # graphical git client
+cask "raycast"        # THE macOS swiss army knife for productivity
+cask "focus"          # limit distractions
 cask "font-fira-code" # monospaced font with coding ligatures
-cask "fork"
-cask "raycast"
+cask "docker-desktop" # "Docker Desktop" app plus `docker` CLI
+#cask "radio-silence"  # firewall & network monitor (currently outdated SHA-256)
 
 # IDEs and coding agents
 cask "warp" # serves as terminal, coding agent and IDE
 cask "cursor"
-cask "claude-code" # (is a cask because it is a binary)
+cask "claude-code" # CLI tool but comes as cask because it's a binary
 vscode "anthropic.claude-code"
-vscode "mathematic.vscode-pdf" # fast maintained PDF viewer
+vscode "mathematic.vscode-pdf" # fast maintained PDF viewer for Cursor
 
 # Apple development
 brew "xcodes"
@@ -49,19 +52,19 @@ vscode "ms-python.python" # Central extension for python
 # Flutter development
 # nothing but issues here. fuck flutter seriously. wasted half a day on this shit.
 # core issue: fvm is broken: latest fvm cannot be installed via brew at all, because it expects to be bundled with a dart version with which it is not bundled 🤡
-# alternative: just cask "flutter" without version manager
+# alternative: just cask "flutter" without version manager, or asdf with flutter plugin
 #tap "leoafarias/fvm" # Required for installing fvm
 #brew "fvm" # flutter version manager
 
 # Screen recording (for demos and lectures)
-mas "Hand Mirror", id: 1502839586 # video overlay in lecture recordings https://handmirror.app
-cask "keycastr" # key strokes overlay in lecture recordings https://github.com/keycastr/keycastr
+mas "Hand Mirror", id: 1502839586 # video overlay in lecture recordings
+cask "keycastr" # key strokes overlay in lecture recordings
 cask "obs" # screen recording that can capture system audio
 cask "handbrake-app" # video transcoder for compressing screen recordings
 
 # CLI tools for working with content file formats (for scripts/agents)
 brew "imagemagick" # working with images (scale, crop, convert format ...)
-brew "ghostscript" # pdf support for imagemagick (which does not install ghostscript by itself)
+brew "ghostscript" # pdf support for imagemagick (which does not install gs)
 brew "pandoc" # universal document converter (markdown, HTML, LaTeX, docx, PDF ...)
 brew "weasyprint" # specialized HTML/CSS to PDF converter, preserves styling
 brew "ffmpeg" # industry-standard CLI video/audio converter/compressor/processor

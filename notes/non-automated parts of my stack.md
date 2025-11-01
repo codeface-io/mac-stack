@@ -16,7 +16,6 @@
 - [Sound Control](https://staticz.com/soundcontrol/)
 - [loopback](https://rogueamoeba.com/loopback/)
 - [Adapter](https://macroplant.com/adapter)
-- [Radio Silence](https://radiosilenceapp.com/)
 - [MWeb](https://www.mweb.im/onemarkdown-help)
   - iOS/macOS markdown app with iCloud Drive integration
   - in particular for viewing rendered markdown on iOS (e.g. in HandMirror)
