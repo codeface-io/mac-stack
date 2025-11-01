@@ -21,7 +21,7 @@ pip install 'markitdown' > /dev/null
 # Update Cursor settings from settings.json backup
 
 if [[ "$CURSOR_RESTORE_BACKUP" == "true" ]]; then
-    echo "⚙️ Restoring Cursor settings from backup ..."
+    echo "⚙️  Restoring Cursor settings from backup ..."
     cursor_target="$HOME/Library/Application Support/Cursor/User/settings.json"
     cursor_source="$MAC_STACK_ROOT/cursor/settings.json"
     mkdir -p "$(dirname "$cursor_target")"
