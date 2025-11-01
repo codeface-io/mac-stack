@@ -20,7 +20,7 @@ It makes sense to build global navigation hot keys around the option key. The op
 
 #### Navigate to: Apps, Web Apps, Workspaces
 
-⌥X for navigation:
+⌥X for navigating to destination X:
 
 | Destination (Intent) | Shortcut | App / Website / Raycast Action |
 |--------|---------|-----|
@@ -51,7 +51,7 @@ It makes sense to build global navigation hot keys around the option key. The op
 
 This requires setup: Copy the scripts from [`scripts`](./scripts) to `~/.config/raycast/scripts`.
 
-⌥⇧X for navigation and actions in active Finder folder:
+⌥⇧X for navigation/action X in active Finder folder:
 
 | Intent | Shortcut | Raycast Action |
 |--------|---------|-----|
@@ -62,7 +62,7 @@ This requires setup: Copy the scripts from [`scripts`](./scripts) to `~/.config/
 
 #### Control Settings and States
 
-⌃X for controlling global settings and states:
+⌃X for controlling global settings/states X:
 
 | Intent | Shortcut | Raycast Action |
 |--------|---------|-----|
