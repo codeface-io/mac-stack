@@ -9,13 +9,14 @@ It currently covers:
   * 🔧 Extensive shell customizations (prompt, functions, aliases)
   * 🍏 Graphical apps (including Mac App Store apps)
   * 🐙 Global git configuration
+  * ⚙️ Cursor settings
   * 🧩 VS Code extensions
   * 📰 Fonts
 
 ### System Configuration
 
-The Mac's configuration is determined by these components:
-* General variables: `.env` file as examplified by [`.env.example`](.env.example)
+The Mac's automated configuration is determined by these components:
+* General variables: [`.env`](.env) file as examplified by [`.env.example`](.env.example)
 * Software stack: mostly declared in [`Brewfile`](Brewfile)
 * Shell customizations: scripts in [`sourced_in_zshrc/`](scripts/sourced_in_zshrc) folder
 * Further software setup: [`update_other_software.sh`](scripts/update_other_software.sh)
@@ -35,7 +36,7 @@ On a fresh system that may not even have GitHub authentication configured:
 
 1. Make sure your [iCloud account is set up](https://support.apple.com/en-us/102314), so that Mac App Store apps can be installed automatically
 2. [Download this repository](https://github.com/codeface-io/mac-stack/archive/refs/heads/master.zip)
-3. Copy [`.env.example`](.env.example), name the copy `.env`, customize `.env`
+3. Copy [`.env.example`](.env.example), name the copy `.env`, customize [`.env`](.env)
    - "dot files" like `.env.example` are hidden by default
    - show/hide them by pressing `Command + Shift + .`
 4. _Technically Optional_: Customize any of the other [components listed above](#system-configuration)
@@ -45,7 +46,6 @@ On a fresh system that may not even have GitHub authentication configured:
 There may be some remaining manual steps to complete your setup:
 
 * If Raycast is part of your setup, [import Raycast settings](raycast/README.md#setup) from your `.rayconfig` file.
-* If Cursor is part of your setup, restore your [`settings.json`](cursor/settings.json) backup to `~/Library/Application Support/Cursor/User/settings.json`.
 
 ### 🧼 Subsequent System Updates
 
@@ -82,6 +82,7 @@ Without customizing anything, the resulting setup will be as follows.
 10. `markitdown`
     - installed via global `pip`
     - required by [`unveil`](scripts/sourced_in_zshrc/customize_the_shell.sh) function
+11. Cursor settings will be restored (overwritten) from backup if `CURSOR_RESTORE_BACKUP` is set `true` in [`.env`](.env) file.
 
 ## To Do
 
