@@ -31,14 +31,14 @@ alias update='\"$update_script\"'"
 
 ensure_zshrc_content "$update_alias_definition"
 
-# Ensure the "brew-cleanup" alias is in ~/.zshrc
+# Ensure the "brewfile-clip" alias is in ~/.zshrc
 
-echo "🔧 Ensuring \`brew-cleanup\` alias is in .zshrc ..."
+echo "🔧 Ensuring \`brewfile-clip\` alias is in .zshrc ..."
 
-brew_cleanup_script="$MAC_STACK_ROOT/brew_cleanup.sh"
-assert_file_exists "$brew_cleanup_script"
+brewfile_clip_script="$MAC_STACK_ROOT/brewfile_clip.sh"
+assert_file_exists "$brewfile_clip_script"
 
-brew_cleanup_alias_definition="# Alias for uninstalling all undeclared brew packages
-alias brew-cleanup='\"$brew_cleanup_script\"'"
+brewfile_clip_alias_definition="# Alias for uninstalling all undeclared brew packages
+alias brewfile-clip='\"$brewfile_clip_script\"'"
 
-ensure_zshrc_content "$brew_cleanup_alias_definition"
+ensure_zshrc_content "$brewfile_clip_alias_definition"
