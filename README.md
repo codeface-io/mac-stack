@@ -69,8 +69,9 @@ Without customizing anything, the resulting setup will be as follows.
    - [`setup_cli_tools.sh`](scripts/sourced_in_zshrc/setup_cli_tools.sh): Necessary setup for CLI tools like `brew` and `pyenv`
    - [`customize_the_shell.sh`](scripts/sourced_in_zshrc/customize_the_shell.sh): General setup including prompt, aliases, functions
    - [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh): Highly individual setup, should be adapted or deleted
-6. `update` alias
-   - for triggering this whole update process from any directory
+6. `update` and `brew-cleanup` aliases for use from any directory
+   - `update` triggers this whole update process
+   - `brew-cleanup` uninstalls all packages that are **not** (yet) in [`Brewfile`](Brewfile)
 7. `~/.gitconfig` (global git config)
    - necessary parameters plus some basic best-practice ones
    - other pre-existing parameters are preserved
