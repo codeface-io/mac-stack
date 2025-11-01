@@ -20,6 +20,7 @@ The Mac's automated configuration is determined by these components:
 * Software stack: mostly declared in [`Brewfile`](Brewfile)
 * Shell customizations: scripts in [`sourced_in_zshrc/`](scripts/sourced_in_zshrc) folder
 * Further software setup: [`update_other_software.sh`](scripts/update_other_software.sh)
+* If activated in [`.env`](.env): The [cursor/settings.json](settings.json). See [`cursor/README.md`](cursor/README.md).
 
 ## How?
 
