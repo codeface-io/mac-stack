@@ -19,7 +19,7 @@ source \"$zshrc_setup_script\""
 
 ensure_zshrc_content "$script_call"
 
-# Ensure the update alias is in ~/.zshrc
+# Ensure the "update" alias is in ~/.zshrc
 
 echo "🔧 Ensuring \`update\` alias is in .zshrc ..."
 
@@ -30,3 +30,15 @@ update_alias_definition="# Alias for setting up or updating the whole system
 alias update='\"$update_script\"'"
 
 ensure_zshrc_content "$update_alias_definition"
+
+# Ensure the "brew-cleanup" alias is in ~/.zshrc
+
+echo "🔧 Ensuring \`brew-cleanup\` alias is in .zshrc ..."
+
+brew_cleanup_script="$MAC_STACK_ROOT/brew_cleanup.sh"
+assert_file_exists "$brew_cleanup_script"
+
+brew_cleanup_alias_definition="# Alias for uninstalling all undeclared brew packages
+alias brew-cleanup='\"$brew_cleanup_script\"'"
+
+ensure_zshrc_content "$brew_cleanup_alias_definition"
