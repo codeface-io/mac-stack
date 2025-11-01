@@ -44,5 +44,5 @@
     // cursor
     "cursor.cpp.disabledLanguages": [],
     "cursor.composer.textSizeScale": 1.0,
-    "cursor.composer.shouldAllowCustomModes": true,
+    "cursor.composer.shouldAllowCustomModes": true
 }

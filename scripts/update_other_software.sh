@@ -17,3 +17,11 @@ python -m pip install --upgrade pip > /dev/null
 
 echo "📝 Installing markitdown (https://github.com/microsoft/markitdown) ..."
 pip install 'markitdown[all]' > /dev/null
+
+# Update Cursor settings from settings.json backup
+
+echo "⚙️ Updating Cursor settings from backup ..."
+cursor_target="$HOME/Library/Application Support/Cursor/User/settings.json"
+cursor_source="$MAC_STACK_ROOT/cursor/settings.json"
+mkdir -p "$(dirname "$cursor_target")"
+cp "$cursor_source" "$cursor_target"
