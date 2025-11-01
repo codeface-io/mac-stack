@@ -1,7 +1,7 @@
 {
     // window
     "window.customTitleBarVisibility": "never",
-    "window.commandCenter": 1, // just means it's visible, 0 means hidden
+    "window.commandCenter": true, // just means it's visible, 0 means hidden
     "window.autoDetectColorScheme": true,
 
     // workbench
@@ -22,6 +22,7 @@
     "editor.stickyScroll.enabled": false,
     "editor.renderWhitespace": "none",
     "editor.renderControlCharacters": false,
+    "editor.guides.indentation": false,
 
     // explorer
     "explorer.confirmDragAndDrop": false,
@@ -37,10 +38,11 @@
     "extensions.ignoreRecommendations": true,
     "files.autoSave": "onFocusChange",
     "python.createEnvironment.trigger": "off",
+    "typescript.updateImportsOnFileMove.enabled": "always",
     "update.releaseTrack": "prerelease",
     
     // cursor
     "cursor.cpp.disabledLanguages": [],
-    "cursor.composer.textSizeScale": 1.15,
-    "cursor.composer.shouldAllowCustomModes": true
+    "cursor.composer.textSizeScale": 1.0,
+    "cursor.composer.shouldAllowCustomModes": true,
 }
