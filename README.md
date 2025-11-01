@@ -5,14 +5,14 @@
 Mac Stack allows to update/setup a developer Mac with one command.
 
 It currently covers:
-  * ⌨️ Command line tools (like `brew`, `git`, `pyenv`, `python`)
   * 🔧 Extensive shell customizations (prompt, functions, aliases)
-  * 🍏 Graphical apps (including Mac App Store apps)
   * 🐙 Global git configuration
-  * ⚙️ Cursor settings
-  * 🧩 VS Code extensions
   * 📰 Fonts
-
+  * ⌨️ Command line tools (like `brew`, `git`, `pyenv`, `python`, `claude-code`)
+  * 🍏 Graphical apps (including Mac App Store apps)
+  * ⚙️ Cursor settings
+  * 🧩 VS Code extensions (for VS Code, Cursor ...)
+  
 ### System Configuration
 
 The Mac's automated configuration is determined by these components:
