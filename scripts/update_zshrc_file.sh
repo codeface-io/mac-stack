@@ -21,7 +21,7 @@ ensure_zshrc_content "$script_call"
 
 # Ensure the "update" alias is in ~/.zshrc
 
-echo "🔧 Ensuring \`update\` alias is in .zshrc ..."
+echo "🔧 Ensuring \`update\` alias is in ~/.zshrc ..."
 
 update_script="$MAC_STACK_ROOT/update.sh"
 assert_file_exists "$update_script"
@@ -33,7 +33,7 @@ ensure_zshrc_content "$update_alias_definition"
 
 # Ensure the "brewfile-clip" alias is in ~/.zshrc
 
-echo "🔧 Ensuring \`brewfile-clip\` alias is in .zshrc ..."
+echo "🔧 Ensuring \`brewfile-clip\` alias is in ~/.zshrc ..."
 
 brewfile_clip_script="$MAC_STACK_ROOT/brewfile_clip.sh"
 assert_file_exists "$brewfile_clip_script"

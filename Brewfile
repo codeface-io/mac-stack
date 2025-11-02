@@ -50,11 +50,10 @@ brew "pyenv" # python version manager
 vscode "ms-python.python" # Central extension for python
 
 # Flutter development
-# nothing but issues here. fuck flutter seriously. wasted half a day on this shit.
-# core issue: fvm is broken: latest fvm cannot be installed via brew at all, because it expects to be bundled with a dart version with which it is not bundled 🤡
-# alternative: just cask "flutter" without version manager, or asdf with flutter plugin
-#tap "leoafarias/fvm" # Required for installing fvm
-#brew "fvm" # flutter version manager
+# core issue: fvm is broken: latest fvm could under some circumstances NOT be installed via brew at all, because it expected to be bundled with a dart version with which it is not bundled 🤡
+# alternative to explore: mise https://mise.jdx.dev/dev-tools/
+tap "leoafarias/fvm" # Required for installing fvm
+brew "fvm" # flutter version manager
 
 # Screen recording (for demos and lectures)
 mas "Hand Mirror", id: 1502839586 # video overlay in lecture recordings
