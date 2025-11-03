@@ -14,7 +14,7 @@ mas "Keynote", id: 409183694
 cask "omnigraffle"
 cask "miro"
 cask "brave-browser"
-cask "onedrive" # 
+cask "onedrive"
 
 # basic developer tools
 brew "git"            # just so it gets updated frequently

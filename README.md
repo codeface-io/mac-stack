@@ -5,7 +5,7 @@
 Mac Stack allows to update/setup a developer Mac with one command.
 
 It currently covers:
-  * 🔧 Extensive shell customizations (prompt, functions, aliases)
+  * 🐚 Extensive shell customizations (prompt, functions, aliases)
   * 🐙 Global git configuration
   * 📰 Fonts
   * ⌨️ Command line tools (like `brew`, `git`, `pyenv`, `python`, `claude-code`)
@@ -89,6 +89,6 @@ Without customizing anything, the resulting setup will be as follows.
 ## To Do
 
 * [Default SSH key](notes/ssh_key_setup_brainstorm.md) (for GitHub, GitLab etc.)
-* System (and app-) settings
-* Flutter, fvm
+* Flutter and Dart (via fvm or mise?)
+* System (and app-) settings (likely via Ansible?)
 * Command for checking out or pulling all repos in a given folder
