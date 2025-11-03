@@ -1,7 +1,7 @@
 {
     // window
     "window.customTitleBarVisibility": "never",
-    "window.commandCenter": true, // just means it's visible, 0 means hidden
+    "window.commandCenter": true,
     "window.autoDetectColorScheme": true,
 
     // workbench
