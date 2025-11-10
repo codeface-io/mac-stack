@@ -89,6 +89,9 @@ Without customizing anything, the resulting setup will be as follows.
 ## To Do
 
 * [Default SSH key](notes/ssh_key_setup_brainstorm.md) (for GitHub, GitLab etc.)
-* Flutter and Dart (via fvm or mise?)
+* Flutter and Dart (via fvm or mise)
 * System (and app-) settings (likely via Ansible?)
 * Command for checking out or pulling all repos in a given folder
+* Feature requests:
+   * mechanism for translating current setup as starting point to mac stack. for initial adoption and getting started (fresh baseline based on generated brewfile and ideally mostly clean scripts/zshrc as well)
+   * integrate repo based password management
