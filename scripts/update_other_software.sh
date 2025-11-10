@@ -11,6 +11,7 @@ latest_python_version="$(python-latest)"
 echo "🐍 Installing latest python ($latest_python_version) and updating pip ..."
 pyenv install --skip-existing "$latest_python_version"
 pyenv global "$latest_python_version"
+eval "$(pyenv init -)" # ensures python is immediately available
 python -m pip install --upgrade pip > /dev/null
 
 # Install markitdown
