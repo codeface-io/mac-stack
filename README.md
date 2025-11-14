@@ -5,7 +5,7 @@
 Mac Stack allows to update/setup a developer Mac with one command.
 
 It currently covers:
-  * 🐚 Extensive shell customizations (prompt, functions, aliases)
+  * 🐚 Shell customizations (prompt, functions, aliases, environment variables)
   * 🐙 Global git configuration
   * 📰 Fonts
   * ⌨️ Command line tools (like `brew`, `git`, `pyenv`, `python`, `claude-code`)

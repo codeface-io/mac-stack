@@ -1,4 +1,4 @@
-# 🍺 All available  homebrew packages can be searched here: https://formulae.brew.sh
+# 🍺 All available homebrew packages can be searched here: https://formulae.brew.sh
 
 # 🍏 Mac App Store apps (and their IDs) can be searched via `mas search <search-term>`
 
