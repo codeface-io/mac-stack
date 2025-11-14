@@ -1,10 +1,16 @@
-# All available  homebrew packages can be searched here: https://formulae.brew.sh
-# Mac App Store apps (and their IDs) can be searched via `mas search <search-term>`
+# 🍺 All available  homebrew packages can be searched here: https://formulae.brew.sh
+
+# 🍏 Mac App Store apps (and their IDs) can be searched via `mas search <search-term>`
+
+# ❗ Prefer casks (🍺) over MAS (🍏) when both exist:
+# - install/update without extra auth
+# - no Apple ID session that can expire mid-`mas` install
+# - avoids MAS region/terms changes that can silently fail
 
 # communication
-mas "Telegram", id: 747648890
-mas "WhatsApp", id: 310633997
-# mas "Microsoft Outlook", id: 985367838
+cask "Telegram"
+cask "WhatsApp"
+cask "microsoft-outlook"
 cask "microsoft-teams"
 
 # writing, diagramming, office
@@ -15,7 +21,7 @@ mas "Keynote", id: 409183694
 cask "omnigraffle"
 cask "miro"
 cask "brave-browser"
-cask "onedrive", id: 823766827
+cask "onedrive"
 
 # basic developer tools
 brew "git"            # just so it gets updated frequently
