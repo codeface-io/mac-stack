@@ -4,7 +4,7 @@
 # communication
 mas "Telegram", id: 747648890
 mas "WhatsApp", id: 310633997
-mas "Microsoft Outlook", id: 985367838
+# mas "Microsoft Outlook", id: 985367838
 cask "microsoft-teams"
 
 # writing, diagramming, office
@@ -55,6 +55,7 @@ vscode "ms-python.python" # Central extension for python
 # alternative to explore: mise https://mise.jdx.dev/dev-tools/
 tap "leoafarias/fvm" # Required for installing fvm
 brew "fvm" # flutter version manager
+brew "cocoapods" # necessary for building iOS apps with Flutter
 
 # Screen recording (for demos and lectures)
 mas "Hand Mirror", id: 1502839586 # video overlay in lecture recordings
