@@ -13,6 +13,7 @@
 
 ## Niche Helper Apps
 
+- [F-Secure (for VPN)](https://www.f-secure.com)
 - [Sound Control](https://staticz.com/soundcontrol/)
 - [loopback](https://rogueamoeba.com/loopback/)
 - [Adapter](https://macroplant.com/adapter)
