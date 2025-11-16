@@ -5,9 +5,10 @@
 ## Setup
 
 * To set up Raycast on a new machine without a paid Raycast Pro account, the easiest way is to export/import Raycast settings.
-   - Raycast Settings → Advanced → Import / Export
-* So whenever you changed Raycast settings, remember to export them. This creates a password protected `.rayconfig` file. Store the file somewhere independent (in the cloud). And store the password somewhere secure (password manager).
-* Then on a new or additional machine, import your Raycast settings from your `.rayconfig` file using the corresponding password.
+* So whenever you changed Raycast settings, remember to export them (Raycast Settings → Advanced → Export). This creates a password protected `.rayconfig` file. Store the file somewhere independent (like in your copy/fork of this repo). And store the password somewhere secure (password manager).
+* Then on a new or additional machine, import your Raycast settings from your `.rayconfig` file using the corresponding password. Before that, ensure the scripts are already in the expected location:
+   1. Copy the scripts from [`scripts`](./scripts) to `~/.config/raycast/scripts`
+   2. Raycast Settings → Advanced → Import
 
 ## Global Hot Keys
 
@@ -48,8 +49,6 @@ It makes sense to build global navigation hot keys around the option key. The op
 | Trash | ⌥⌫ | Open Trash |
 
 #### In Active Finder Folder
-
-This requires setup: Copy the scripts from [`scripts`](./scripts) to `~/.config/raycast/scripts`.
 
 ⌥⇧X for navigation/action X in active Finder folder:
 
