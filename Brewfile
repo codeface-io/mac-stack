@@ -22,6 +22,7 @@ cask "omnigraffle"
 cask "miro"
 cask "brave-browser"
 cask "onedrive"
+cask "eqmac" # equalizer because: 1) display speakers are boomy, 2) music
 
 # basic developer tools
 brew "git"            # just so it gets updated frequently
