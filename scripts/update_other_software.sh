@@ -28,3 +28,12 @@ if [[ "$CURSOR_RESTORE_BACKUP" == "true" ]]; then
     mkdir -p "$(dirname "$cursor_target")"
     cp "$cursor_source" "$cursor_target"
 fi
+
+# Ensure that homefolder contains a .cursorignore file
+
+home_cursorignore="$HOME/.cursorignore"
+
+if [[ ! -f "$home_cursorignore" ]]; then
+    echo "⚙️  Creating ~/.cursorignore since it doesn't exist ..."
+    cp "$MAC_STACK_ROOT/cursor/ignore_in_home/.cursorignore" "$home_cursorignore"
+fi

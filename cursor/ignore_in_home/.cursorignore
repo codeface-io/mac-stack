@@ -1,0 +1,11 @@
+# Ignore the standard macOS home directories
+Applications/
+Desktop/
+Documents/
+Downloads/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+.Trash/
