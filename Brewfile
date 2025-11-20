@@ -30,7 +30,7 @@ cask "fork"           # graphical git client
 cask "raycast"        # THE macOS swiss army knife for productivity
 cask "focus"          # limit distractions
 cask "font-fira-code" # monospaced font with coding ligatures
-cask "docker-desktop" # "Docker Desktop" app plus `docker` CLI
+#cask "docker-desktop" # "Docker Desktop" app plus `docker` CLI
 #cask "radio-silence"  # firewall & network monitor (currently outdated SHA-256)
 
 # IDEs and coding agents
