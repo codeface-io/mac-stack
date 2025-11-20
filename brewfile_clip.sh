@@ -1,6 +1,6 @@
 #!/bin/zsh
 # This script enforces the philosophy that every Homebrew package used must be declared explicitly in the Brewfile.
-# It uninstalls 1) brew packages that are not (yet) declared in the Brewfile, and 2) brew packages that are orphaned dependencies (Orphaned means they were once installed as dependencies but are not depended upon anymore. Brew intentionally tracks and keeps such orphans.)
+# It uninstalls 1) brew packages that are not (yet) declared in the Brewfile, and 2) brew packages that are orphaned dependencies (Orphaned means they were once installed as dependencies but are not depended upon anymore. Brew intentionally tracks and keeps such orphans.), and 3) unused old package versions, caches
 
 # Prepare
 set -e  # Exit on any error
@@ -17,4 +17,5 @@ fi
 echo "🧹 Uninstalling ..."
 brew bundle cleanup --force --file "$BREWFILE_PATH" # (1)
 brew autoremove # (2)
+brew cleanup # (3)
 echo "✅ Did uninstall all brew packages that are not declared in the Brewfile"
