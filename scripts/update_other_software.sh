@@ -17,7 +17,7 @@ python -m pip install --upgrade pip > /dev/null
 # Install markitdown
 
 echo "📝 Installing markitdown (https://github.com/microsoft/markitdown) ..."
-pip install 'markitdown' > /dev/null
+(pipx upgrade markitdown || pipx install markitdown) > /dev/null
 
 # Update Cursor settings from settings.json backup
 

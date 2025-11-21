@@ -55,6 +55,7 @@ cask "font-new-york"
 # Python development
 brew "xz" # Required for installing certain Python versions via pyenv
 brew "pyenv" # python version manager
+brew "pipx" # python application manager
 vscode "ms-python.python" # Central extension for python
 
 # Flutter development

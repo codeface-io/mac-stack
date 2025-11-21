@@ -106,7 +106,7 @@ unveil() {
     if ! command -v markitdown &> /dev/null; then
         echo "markitdown not found (yet)."
         echo "markitdown (by Microsoft) helps making all kinds of content readable to AI."
-        echo "Install it with: pip install 'markitdown[all]'"
+        echo "Install it with: pipx install 'markitdown'"
         echo "Or visit: https://github.com/microsoft/markitdown"
         return 1
     fi
