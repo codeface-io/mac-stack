@@ -17,7 +17,7 @@ else
     brew update
 fi
 
-# Update pre-existing Homebrew packages (outside Brewfile)
+# Update pre-existing Homebrew packages (even outside Brewfile)
 
 echo "🧼 Updating pre-existing Homebrew packages ..."
 /opt/homebrew/bin/brew upgrade
@@ -29,7 +29,8 @@ brewfile="$MAC_STACK_ROOT/Brewfile"
 assert_file_exists "$brewfile"
 /opt/homebrew/bin/brew bundle install --upgrade --file "$brewfile"
 
-# Clean up Homebrew: cache, old package versions
+# Clean up Homebrew: cache, old package versions, Cask installers
 
-echo "🧹 Cleaning up Homebrew cache and old package versions ..."
+echo "🧹 Cleaning up Homebrew cache, old package versions and Cask installers ..."
 /opt/homebrew/bin/brew cleanup
+find /opt/homebrew/Caskroom -type d -name '.metadata' -prune -o -type f -delete
