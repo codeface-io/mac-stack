@@ -34,6 +34,7 @@
 - [Basecamp (project management)](https://basecamp.com)
 - [uv (python eco system manager)](https://github.com/astral-sh/uv)
 - [Hey (email + calendar)](https://www.hey.com)
+- [DaisyDisk (disk usage inspection)](https://daisydiskapp.com/)
 - [Replicate (AI models)](https://replicate.com/)
 - [DigitalOcean (hosting)](https://www.digitalocean.com/)
   - [Cloud AI](https://www.digitalocean.com/products/ai-ml)
