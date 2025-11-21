@@ -21,7 +21,6 @@ mas "Keynote", id: 409183694
 cask "omnigraffle"
 cask "miro"
 cask "brave-browser"
-#cask "onedrive"
 cask "eqmac" # equalizer because: 1) display speakers are boomy, 2) music
 
 # basic developer tools
