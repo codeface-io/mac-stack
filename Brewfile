@@ -21,7 +21,7 @@ mas "Keynote", id: 409183694
 cask "omnigraffle"
 cask "miro"
 cask "brave-browser"
-cask "onedrive"
+#cask "onedrive"
 cask "eqmac" # equalizer because: 1) display speakers are boomy, 2) music
 
 # basic developer tools
@@ -30,6 +30,7 @@ cask "fork"           # graphical git client
 cask "raycast"        # THE macOS swiss army knife for productivity
 cask "focus"          # limit distractions
 cask "font-fira-code" # monospaced font with coding ligatures
+cask "omnidisksweeper" # simple free disk usage inspection (give it full disk access in System Settings > Privacy & Security)
 #cask "docker-desktop" # "Docker Desktop" app plus `docker` CLI
 #cask "radio-silence"  # firewall & network monitor (currently outdated SHA-256)
 
