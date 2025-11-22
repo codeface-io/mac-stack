@@ -62,11 +62,12 @@ tap "leoafarias/fvm" # Required for installing fvm
 brew "fvm" # flutter version manager
 brew "cocoapods" # necessary for building iOS apps with Flutter
 
-# Screen recording (for demos and lectures)
+# Screen recording (for demos and lectures) and media
 mas "Hand Mirror", id: 1502839586 # video overlay in lecture recordings
 cask "keycastr" # key strokes overlay in lecture recordings
 cask "obs" # screen recording that can capture system audio
 cask "handbrake-app" # video transcoder for compressing screen recordings
+cask "adapter" # converting video, audio and images
 
 # CLI tools for working with content file formats (for scripts/agents)
 brew "imagemagick" # working with images (scale, crop, convert format ...)

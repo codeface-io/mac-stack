@@ -12,7 +12,6 @@
 - [F-Secure (for VPN)](https://www.f-secure.com)
 - [Sound Control](https://staticz.com/soundcontrol/)
 - [loopback](https://rogueamoeba.com/loopback/)
-- [Adapter](https://macroplant.com/adapter)
 - [MWeb](https://www.mweb.im/onemarkdown-help)
   - iOS/macOS markdown app with iCloud Drive integration
   - in particular for viewing rendered markdown on iOS
