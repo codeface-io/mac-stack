@@ -31,7 +31,7 @@ cask "omnidisksweeper" # simple free disk usage inspection (give it full disk ac
 # IDEs and coding agents
 cask "warp" # serves as terminal, coding agent and IDE
 cask "cursor"
-cask "antigravity"
+cask "antigravity" # https://antigravity.google.com
 cask "claude-code" # CLI tool but comes as cask because it's a binary
 vscode "anthropic.claude-code"
 vscode "mathematic.vscode-pdf" # fast maintained PDF viewer for Cursor

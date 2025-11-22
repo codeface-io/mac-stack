@@ -2,7 +2,6 @@
 
 ## IDEs & AI Coding
 
-- [Antigravity](https://antigravity.google.com)
 - [Kiro](https://kiro.dev)
 - [cline.bot](https://cline.bot)
 - [opencode.ai](https://opencode.ai)
