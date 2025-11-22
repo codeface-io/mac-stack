@@ -19,14 +19,22 @@ python -m pip install --upgrade pip > /dev/null
 echo "📝 Installing markitdown (https://github.com/microsoft/markitdown) ..."
 (pipx upgrade markitdown || pipx install markitdown) > /dev/null
 
-# Update Cursor settings from settings.json backup
+# Update VS Code/Cursor/Antigravity settings from settings.json backup
 
-if [[ "$CURSOR_RESTORE_BACKUP" == "true" ]]; then
-    echo "⚙️  Restoring Cursor settings from backup ..."
+if [[ "$VSCODE_SETTINGS_RESTORE" == "true" ]]; then
+    echo "⚙️  Restoring VS Code/Cursor/Antigravity settings from backup ..."
+    
+    settings_source="$MAC_STACK_ROOT/vscode/settings.json"
+
+    vscode_target="$HOME/Library/Application Support/Code/User/settings.json"
+    mkdir -p "$(dirname "$vscode_target")"
+    cp "$settings_source" "$vscode_target"
+    
     cursor_target="$HOME/Library/Application Support/Cursor/User/settings.json"
-    cursor_source="$MAC_STACK_ROOT/cursor/settings.json"
     mkdir -p "$(dirname "$cursor_target")"
-    cp "$cursor_source" "$cursor_target"
-fi
+    cp "$settings_source" "$cursor_target"
 
+    agy_target="$HOME/Library/Application Support/Antigravity/User/settings.json"
+    mkdir -p "$(dirname "$agy_target")"
+    cp "$settings_source" "$agy_target"
 fi

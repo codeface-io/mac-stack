@@ -10,8 +10,8 @@ It currently covers:
   * 📰 Fonts
   * ⌨️ Command line tools (like `brew`, `git`, `pyenv`, `python`, `claude-code`)
   * 🍏 Graphical apps (including Mac App Store apps)
-  * ⚙️ Cursor settings
-  * 🧩 VS Code extensions (for VS Code, Cursor ...)
+  * ⚙️ Settings for VS Code/Cursor/Antigravity
+  * 🧩 Extensions for VS Code/Cursor/Antigravity
   
 ### System Configuration
 
@@ -20,7 +20,7 @@ The Mac's automated configuration is determined by these components:
 * Software stack: mostly declared in [`Brewfile`](Brewfile)
 * Shell customizations: scripts in [`sourced_in_zshrc/`](scripts/sourced_in_zshrc) folder
 * Further software setup: [`update_other_software.sh`](scripts/update_other_software.sh)
-* If activated in [`.env`](.env): The [cursor/settings.json](settings.json). See [`cursor/README.md`](cursor/README.md).
+* IDE settings: [vscode/settings.json](vscode/settings.json), activation in [`.env`](.env), see [`vscode/README.md`](vscode/README.md)
 
 ## How?
 
@@ -84,7 +84,7 @@ Without customizing anything, the resulting setup will be as follows.
 10. `markitdown`
     - installed via global `pip`
     - required by [`unveil`](scripts/sourced_in_zshrc/customize_the_shell.sh) function
-11. Cursor settings restored (overwritten) from backup if `CURSOR_RESTORE_BACKUP` is set `true` in [`.env`](.env) file.
+11. VS Code/Cursor/Antigravity settings restored (overwritten) from backup if `VSCODE_SETTINGS_RESTORE` is set `true` in [`.env`](.env) file.
 
 ## To Do
 
