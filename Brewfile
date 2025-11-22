@@ -1,11 +1,6 @@
 # 🍺 All available homebrew packages can be searched here: https://formulae.brew.sh
-
 # 🍏 Mac App Store apps (and their IDs) can be searched via `mas search <search-term>`
-
-# ❗ Prefer casks (🍺) over MAS (🍏) when both exist:
-# - install/update without extra auth
-# - no Apple ID session that can expire mid-`mas` install
-# - avoids MAS region/terms changes that can silently fail
+# 🚨 Prefer casks (🍺) over MAS apps (🍏) because cask installs work more reliably!
 
 # communication
 cask "Telegram"
@@ -24,14 +19,14 @@ cask "brave-browser"
 cask "eqmac" # equalizer because: 1) display speakers are boomy, 2) music
 
 # basic developer tools
-brew "git"            # just so it gets updated frequently
-cask "fork"           # graphical git client
-cask "raycast"        # THE macOS swiss army knife for productivity
-cask "focus"          # limit distractions
-cask "font-fira-code" # monospaced font with coding ligatures
+brew "git"             # just so it gets updated frequently
+cask "fork"            # graphical git client
+cask "raycast"         # THE macOS swiss army knife for productivity
+cask "focus"           # limit distractions
+cask "font-fira-code"  # monospaced font with coding ligatures
 cask "omnidisksweeper" # simple free disk usage inspection (give it full disk access in System Settings > Privacy & Security)
-#cask "docker-desktop" # "Docker Desktop" app plus `docker` CLI
-#cask "radio-silence"  # firewall & network monitor (currently outdated SHA-256)
+#cask "docker-desktop"  # "Docker Desktop" app plus `docker` CLI
+#cask "radio-silence"   # firewall & network monitor (currently outdated SHA-256)
 
 # IDEs and coding agents
 cask "warp" # serves as terminal, coding agent and IDE
