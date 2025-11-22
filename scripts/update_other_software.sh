@@ -22,19 +22,23 @@ echo "📝 Installing markitdown (https://github.com/microsoft/markitdown) ..."
 # Update VS Code/Cursor/Antigravity settings from settings.json backup
 
 if [[ "$VSCODE_SETTINGS_RESTORE" == "true" ]]; then
-    echo "⚙️  Restoring VS Code/Cursor/Antigravity settings from backup ..."
+    echo "⚙️  Restoring VS Code/Cursor/Antigravity settings and keybindings from backup ..."
     
     settings_source="$MAC_STACK_ROOT/vscode/settings.json"
+    keybindings_source="$MAC_STACK_ROOT/vscode/keybindings.json"
 
-    vscode_target="$HOME/Library/Application Support/Code/User/settings.json"
-    mkdir -p "$(dirname "$vscode_target")"
-    cp "$settings_source" "$vscode_target"
+    vscode_dir="$HOME/Library/Application Support/Code/User"
+    mkdir -p "$vscode_dir"
+    cp "$settings_source" "$vscode_dir/settings.json"
+    cp "$keybindings_source" "$vscode_dir/keybindings.json"
     
-    cursor_target="$HOME/Library/Application Support/Cursor/User/settings.json"
-    mkdir -p "$(dirname "$cursor_target")"
-    cp "$settings_source" "$cursor_target"
+    cursor_dir="$HOME/Library/Application Support/Cursor/User"
+    mkdir -p "$cursor_dir"
+    cp "$settings_source" "$cursor_dir/settings.json"
+    cp "$keybindings_source" "$cursor_dir/keybindings.json"
 
-    agy_target="$HOME/Library/Application Support/Antigravity/User/settings.json"
-    mkdir -p "$(dirname "$agy_target")"
-    cp "$settings_source" "$agy_target"
+    agy_dir="$HOME/Library/Application Support/Antigravity/User"
+    mkdir -p "$agy_dir"
+    cp "$settings_source" "$agy_dir/settings.json"
+    cp "$keybindings_source" "$agy_dir/keybindings.json"
 fi
