@@ -1,18 +1,19 @@
 {
     // window
-    "window.customTitleBarVisibility": "never",
-    "window.commandCenter": true,
     "window.autoDetectColorScheme": true,
-
+    "window.commandCenter": false,
+    "window.customTitleBarVisibility": "never",
     // workbench
-    "workbench.statusBar.visible": false,
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.editor.editorActionsLocation": "hidden",
     "workbench.editor.showTabs": "none",
     "workbench.editorAssociations": {},
+    "workbench.layoutControl.enabled": false,
+    "workbench.navigationControl.enabled": false,
     "workbench.preferredLightColorTheme": "Default Light Modern",
     "workbench.preferredDarkColorTheme": "Default Dark Modern",
-    "workbench.colorTheme": "Default Dark Modern",
-    "workbench.layoutControl.enabled": false,
-
+    "workbench.statusBar.visible": false,
     // editor
     "editor.wordWrap": "on",
     "editor.wrappingIndent": "indent",
@@ -23,15 +24,13 @@
     "editor.renderWhitespace": "none",
     "editor.renderControlCharacters": false,
     "editor.guides.indentation": false,
-
+    "editor.minimap.enabled": false,
     // explorer
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
-
     // git
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
-
     // other
     "terminal.integrated.defaultProfile.osx": "zsh",
     "breadcrumbs.enabled": false,
@@ -40,7 +39,6 @@
     "python.createEnvironment.trigger": "off",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "update.releaseTrack": "prerelease",
-    
     // cursor
     "cursor.cpp.disabledLanguages": [],
     "cursor.composer.textSizeScale": 1.0,
