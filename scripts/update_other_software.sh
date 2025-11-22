@@ -4,26 +4,30 @@
 set -e  # Exit on any error
 set -u  # Treat unset variables as error
 
-# Install the latest python version and update its pip
+# Update python and its pip
 
 source "$MAC_STACK_ROOT/scripts/sourced_in_zshrc/customize_the_shell.sh" # load `python-latest` alias
 latest_python_version="$(python-latest)"
-echo "🐍 Installing latest python ($latest_python_version) and updating pip ..."
-pyenv install --skip-existing "$latest_python_version"
+if ! pyenv versions | grep -q "$latest_python_version"; then
+    echo "🐍 Installing Python $latest_python_version ..."
+    pyenv install --skip-existing "$latest_python_version"
+fi
+
+echo "🐍 Updating pip for Python $latest_python_version ..."
 pyenv global "$latest_python_version"
 eval "$(pyenv init -)" # ensures python is immediately available
 python -m pip install --upgrade pip > /dev/null
 
-# Install markitdown
+# Update markitdown
 
-echo "📝 Installing markitdown (https://github.com/microsoft/markitdown) ..."
+echo "📝 Updating markitdown (https://github.com/microsoft/markitdown) ..."
 (pipx upgrade --quiet markitdown || pipx install --quiet markitdown) > /dev/null
 
 # Update IDE settings and keybindings
 
 if [[ "$VSCODE_SETTINGS_RESTORE" == "true" ]]; then
     source "$MAC_STACK_ROOT/scripts/helpers.sh"
-    
+
     settings="$MAC_STACK_ROOT/vscode/settings.json"
     assert_file_exists "$settings"
     
