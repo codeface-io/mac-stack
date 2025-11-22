@@ -72,7 +72,7 @@ Without customizing anything, the resulting setup will be as follows.
    - [`personalize_the_shell.sh`](scripts/sourced_in_zshrc/personalize_the_shell.sh): Highly individual setup, should be adapted or deleted
 6. `update` and `brewfile-clip` aliases for use from any directory
    - `update` triggers this whole update process
-   - `brewfile-clip` uninstalls all packages that are **not** (yet) in [`Brewfile`](Brewfile) as well as orphaned dependencies
+   - `brewfile-clip` uninstalls all packages that are **not** (yet) in [`Brewfile`](Brewfile) as well as orphaned dependencies, caches, old package versions and cask installers.
 7. `~/.gitconfig` (global git config)
    - necessary parameters plus some basic best-practice ones
    - other pre-existing parameters are preserved
