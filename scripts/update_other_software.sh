@@ -17,7 +17,7 @@ python -m pip install --upgrade pip > /dev/null
 # Install markitdown
 
 echo "📝 Installing markitdown (https://github.com/microsoft/markitdown) ..."
-(pipx upgrade markitdown || pipx install markitdown) > /dev/null
+(pipx upgrade --quiet markitdown || pipx install --quiet markitdown) > /dev/null
 
 # Update VS Code/Cursor/Antigravity settings from settings.json backup
 
