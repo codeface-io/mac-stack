@@ -20,7 +20,7 @@ The Mac's automated configuration is determined by these components:
 * Software stack: mostly declared in [`Brewfile`](Brewfile)
 * Shell customizations: scripts in [`sourced_in_zshrc/`](scripts/sourced_in_zshrc) folder
 * Further software setup: [`update_other_software.sh`](scripts/update_other_software.sh)
-* IDE settings: [vscode/settings.json](vscode/settings.json), activation in [`.env`](.env), see [`vscode/README.md`](vscode/README.md)
+* IDE settings: [vscode/settings.json](vscode/settings.json), activation in [`.env`](.env.example), see [`vscode/README.md`](vscode/README.md)
 
 ## How?
 
