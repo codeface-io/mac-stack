@@ -12,3 +12,6 @@ eval "$(pyenv init -)"
 
 # Setup pipx
 export PATH="$PATH:$HOME/.local/bin"
+
+# Setup antigravity
+export PATH="$PATH:$HOME/.antigravity/antigravity/bin"
