@@ -82,7 +82,7 @@ Without customizing anything, the resulting setup will be as follows.
    - updating global Python is fine because local Python projects should pin their required Python version anyways – either via `pyenv local` or by their virtual environment or both
 9. `pip` for global Python
 10. `markitdown`
-    - installed via global `pip`
+    - installed via `pipx`
     - required by [`unveil`](scripts/sourced_in_zshrc/customize_the_shell.sh) function
 11. IDE settings restored (overwritten) from backup if `VSCODE_SETTINGS_RESTORE` is set `true` in [`.env`](.env) file.
 
