@@ -27,7 +27,7 @@ It makes sense to build global navigation hot keys around the option key. The op
 |--------|---------|-----|
 | AI Assistant | ⌥A | Grok |
 | Calendar | ⌥C | Calendar |
-| Develop | ⌥D | Cursor |
+| Develop | ⌥D | Antigravity |
 | Email | ⌥E | Mail |
 | Finder | ⌥F | Finder |
 | Git Client | ⌥G | Fork |
@@ -54,7 +54,7 @@ It makes sense to build global navigation hot keys around the option key. The op
 
 | Intent | Shortcut | Raycast Action |
 |--------|---------|-----|
-| Develop in folder | ⌥⇧D | Open folder in Cursor |
+| Develop in folder | ⌥⇧D | Open folder in Antigravity |
 | Create new file in folder | ⌥⇧F | Create new file in folder |
 | Write in folder | ⌥⇧W | Open folder in Typora |
 | Terminal in folder | ⌥⇧⏎ | Open folder in Warp |
