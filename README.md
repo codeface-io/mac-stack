@@ -10,8 +10,8 @@ It currently covers:
   * 📰 Fonts
   * ⌨️ Command line tools (like `brew`, `git`, `pyenv`, `python`, `claude-code`)
   * 🍏 Graphical apps (including Mac App Store apps)
-  * ⚙️ Settings for VS Code/Cursor/Antigravity
-  * 🧩 Extensions for VS Code/Cursor/Antigravity
+  * ⚙️ Settings and keybindings for most VS Code based IDEs
+  * 🧩 Extensions for VS Code based IDEs
   
 ### System Configuration
 
@@ -84,7 +84,7 @@ Without customizing anything, the resulting setup will be as follows.
 10. `markitdown`
     - installed via global `pip`
     - required by [`unveil`](scripts/sourced_in_zshrc/customize_the_shell.sh) function
-11. VS Code/Cursor/Antigravity settings restored (overwritten) from backup if `VSCODE_SETTINGS_RESTORE` is set `true` in [`.env`](.env) file.
+11. IDE settings restored (overwritten) from backup if `VSCODE_SETTINGS_RESTORE` is set `true` in [`.env`](.env) file.
 
 ## To Do
 
