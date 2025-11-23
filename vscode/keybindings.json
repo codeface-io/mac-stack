@@ -46,5 +46,27 @@
         "key": "cmd+p",
         "command": "markdown.showSource",
         "when": "activeCustomEditorId == 'vscode.markdown.preview.editor' || activeWebviewPanelId == 'markdown.preview'"
+    },
+    {
+        "key": "down",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "list.focusDown",
+                "filesExplorer.openFilePreserveFocus"
+            ]
+        },
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "up",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "list.focusUp",
+                "filesExplorer.openFilePreserveFocus"
+            ]
+        },
+        "when": "filesExplorerFocus && !inputFocus"
     }
 ]
