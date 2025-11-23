@@ -2,6 +2,7 @@
 
 ## IDEs & AI Coding
 
+- [Zed](https://zed.dev)
 - [Kiro](https://kiro.dev)
 - [cline.bot](https://cline.bot)
 - [opencode.ai](https://opencode.ai)
