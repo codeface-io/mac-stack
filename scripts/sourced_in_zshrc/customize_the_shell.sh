@@ -124,18 +124,12 @@ d() {
     local target_dir="${1:-$(pwd)}"
 
     if [[ -d "$target_dir" ]]; then
-        cursor "$target_dir"
+        agy "$target_dir"
     else
         echo "🛑 Directory '$target_dir' does not exist"
         return 1
     fi
 }
-
-# Alias for installing the latest Xcode version
-alias update-xcode="xcodes install --latest"
-
-# Alias for getting the latest Python version
-alias python-latest="pyenv install --list | grep -E '^\s*[0-9]+\.[0-9]+\.[0-9]+$' | tail -1 | xargs"
 
 # hide-extensions: Hide all file extensions in the current directory
 hide-extensions() {
@@ -154,3 +148,9 @@ show-extensions() {
     fi
   done
 }
+
+# Get the latest Python version
+alias python-latest="pyenv install --list | grep -E '^\s*[0-9]+\.[0-9]+\.[0-9]+$' | tail -1 | xargs"
+
+# Install the latest Xcode version
+alias xcode-update="xcodes install --latest"
