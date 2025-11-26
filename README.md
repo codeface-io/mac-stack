@@ -88,6 +88,7 @@ Without customizing anything, the resulting setup will be as follows.
 
 ## To Do
 
+* generate symlinks to dotfiles dynamically during update, gitignore the symlinks (ignore everything in dotfiles folder that starts with a dot)
 * [Default SSH key](notes/ssh_key_setup_brainstorm.md) (for GitHub, GitLab etc.)
 * Flutter and Dart (via fvm or mise)
 * System (and app-) settings (likely via Ansible?)
