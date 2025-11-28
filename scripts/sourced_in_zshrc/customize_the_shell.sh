@@ -154,3 +154,44 @@ alias python-latest="pyenv install --list | grep -E '^\s*[0-9]+\.[0-9]+\.[0-9]+$
 
 # Install the latest Xcode version
 alias xcode-update="xcodes install --latest"
+
+# md2pdf: Converts Markdown to PDF using Pandoc and WeasyPrint
+# Usage: md2pdf <filename>
+md2pdf() {
+    if [ -z "$1" ]; then
+        echo "Usage: md2pdf <markdown_file>"
+        return 1
+    fi
+
+    local input_file="$1"
+    
+    if [ ! -f "$input_file" ]; then
+        echo "Error: File '$input_file' not found."
+        return 1
+    fi
+
+    local output_file="${input_file%.*}.pdf"
+    # Use the CSS file located in the same directory as this script
+    local css_file="$SCRIPT_DIR/pdf_style.css"
+
+    if [ ! -f "$css_file" ]; then
+        echo "Error: CSS file not found at '$css_file'"
+        return 1
+    fi
+
+    echo "Converting '$input_file' to PDF..."
+    # We use grep to filter out harmless warnings from WeasyPrint about unsupported CSS properties
+    # that Pandoc injects by default (gap with min(), overflow-x).
+    pandoc "$input_file" \
+        -o "$output_file" \
+        --pdf-engine=weasyprint \
+        --css="$css_file" \
+        2> >(grep -v -E "Ignored .*(gap|overflow-x)" >&2)
+
+    if [ $? -eq 0 ]; then
+        echo "✅ PDF created at: $output_file"
+    else
+        echo "🛑 Conversion failed."
+        return 1
+    fi
+}
