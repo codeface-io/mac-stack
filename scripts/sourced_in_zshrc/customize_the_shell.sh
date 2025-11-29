@@ -155,8 +155,24 @@ alias python-latest="pyenv install --list | grep -E '^\s*[0-9]+\.[0-9]+\.[0-9]+$
 # Install the latest Xcode version
 alias xcode-update="xcodes install --latest"
 
-# md2pdf: Converts Markdown to PDF using Pandoc and WeasyPrint
-# Usage: md2pdf <filename>
+# md2pdf: Converts Markdown to PDF using Pandoc and WeasyPrint.
+#
+# USAGE:
+# `md2pdf <markdown_file>`
+#
+# This function converts a specified Markdown file into a PDF document.
+# It leverages Pandoc for the conversion and WeasyPrint as the PDF engine,
+# allowing for high-quality PDF generation with custom styling.
+#
+# It automatically applies a CSS file (`pdf_style.css`) located in the same
+# directory as this script to style the generated PDF, ensuring a consistent
+# and professional appearance.
+#
+# WHY IT'S USEFUL:
+# Ideal for creating shareable, print-ready documents from Markdown sources.
+# It streamlines the process of generating reports, documentation, or any
+# text-based content that benefits from a polished PDF format, making it
+# easy to transform plain text into a beautifully formatted document.
 md2pdf() {
     if [ -z "$1" ]; then
         echo "Usage: md2pdf <markdown_file>"
