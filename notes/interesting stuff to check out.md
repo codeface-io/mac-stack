@@ -2,11 +2,30 @@
 
 ## IDEs & AI Coding
 
-- [Zed](https://zed.dev)
+### IDEs with Integrated Agent UI
+- [Zed (not VS Code based, fast UI)](https://zed.dev)
 - [Kiro](https://kiro.dev)
+- [Windsurf](https://windsurf.com/)
+- [TRAE](https://www.trae.ai/)
+
+### CLI Agents with VS Code Extensions
 - [cline.bot](https://cline.bot)
 - [opencode.ai](https://opencode.ai)
 - [kilocode.ai](https://kilocode.ai)
+- [Aider](https://aider.chat) (Community Extensions)
+- [Mentat](https://github.com/mentat-ai/mentat) (Official Extension)
+- [GPT Pilot](https://github.com/Pythagora-io/gpt-pilot) (Official Extension "Pythagora")
+
+### Pure CLI Agents
+- [Open Interpreter](https://openinterpreter.com) (System Automation)
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) (Autonomous Engineer Platform)
+- [Google Gemini CLI](https://github.com/google-gemini/gemini-cli) (Official CLI Agent)
+
+### Terminal-Agent Integrations
+- [Warp (have not properly tested it)](https://warp.dev/)
+- [Wave](https://www.waveterm.dev/)
+
+### Other
 - [Context7 (official documentations as context)](https://context7.com)
 
 ## Building AI Applications
@@ -26,7 +45,6 @@
 
 ## Other Software
 
-- [supercharge](https://sindresorhus.com/supercharge)
 - [ladybird.org (independent browser)](https://ladybird.org)
 - [mise.jdx.dev (macOS environment manager)](https://mise.jdx.dev)
 - [lazygit](https://github.com/jesseduffield/lazygit)
