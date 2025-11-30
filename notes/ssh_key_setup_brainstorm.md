@@ -56,9 +56,21 @@ ICLOUD_BACKUP_PATH="$HOME/Library/Mobile Documents/com~apple~CloudDocs/backup"
 - **Keep existing**: Work PATs remain untouched
 
 ### `~/.ssh/config` 
-- **Not needed for default key**: SSH auto-discovers `id_ed25519`
-- **Keep existing**: Work-specific configs remain
-- **Only needed for**: Custom key names or host-specific settings
+- **Safe Automation**: Use `Include` directive to inject settings without overwriting user's existing config.
+- **Strategy**:
+  1. **Append** `Include ~/.ssh/config.d/*` to the **bottom** of `~/.ssh/config` (if not present).
+  2. Write managed settings to `~/.ssh/config.d/macstack`.
+  
+  *Example `~/.ssh/config.d/macstack`:*
+  ```ssh
+  Host github.com
+    User git
+  
+  Host *
+    UseKeychain yes
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/id_ed25519
+  ```
 
 ### `~/.ssh/known_hosts`
 - **Auto-populated**: First connection to GitHub prompts user once
@@ -79,6 +91,15 @@ ICLOUD_BACKUP_PATH="$HOME/Library/Mobile Documents/com~apple~CloudDocs/backup"
 - **Leave work keys untouched**: Existing work keys remain for organizational requirements
 - **Separate concerns**: Default key for personal services, work keys for work
 - **No conflicts**: SSH config handles key selection per host when needed
+
+## Other Notes
+
+As setup script might want to:
+```bash
+# Auto-add GitHub to known_hosts so scripts don't ask for confirmation
+# The '||' ensures we don't duplicate if it's already there
+ssh-keygen -F github.com || ssh-keyscan github.com >> ~/.ssh/known_hosts
+```
 
 ## Benefits
 - ✅ Simple: No external tools required
