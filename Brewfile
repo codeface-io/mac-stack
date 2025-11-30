@@ -10,6 +10,7 @@ cask "microsoft-teams"
 
 # writing, diagramming, office
 cask "typora"
+cask "texifier" # LaTeX editor
 mas "Pages", id: 409201541
 mas "Numbers", id: 409203825
 mas "Keynote", id: 409183694
