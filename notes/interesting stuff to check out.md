@@ -8,7 +8,6 @@
 - [opencode.ai](https://opencode.ai)
 - [kilocode.ai](https://kilocode.ai)
 - [Context7 (official documentations as context)](https://context7.com)
-- [Fleet](https://www.jetbrains.com/fleet/)
 
 ## Building AI Applications
 
