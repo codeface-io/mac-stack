@@ -48,6 +48,53 @@ ICLOUD_BACKUP_PATH="$HOME/Library/Mobile Documents/com~apple~CloudDocs/backup"
 - Backup: `~/iCloud/backup/ssh/id_ed25519.pub` (public for verification)
 - Target: `~/.ssh/id_ed25519` (restored private key)
 
+## Alternative: Progressive Detection Approach
+
+**Philosophy**: Detect, inform, exit gracefully. Simpler than full automation.
+
+### Script Behavior
+
+1. **Key exists** (`~/.ssh/id_ed25519`):
+   - ✅ Add to SSH agent (prompts for passphrase if not in Keychain)
+   - ✅ Continue with automation
+
+2. **Key missing**:
+   - ⚠️ Display helpful message with options
+   - 🛑 Exit gracefully
+   - ✅ User restores key manually and re-runs script
+
+### Example Script Logic
+
+```bash
+if [ ! -f ~/.ssh/id_ed25519 ]; then
+    echo "⚠️  No SSH key found at ~/.ssh/id_ed25519"
+    echo ""
+    echo "Options:"
+    echo "  1. Restore from your backup (iCloud, password manager, etc.)"
+    echo "  2. Generate new: ssh-keygen -t ed25519 -C 'your_email@example.com'"
+    echo "  3. Then add public key to GitHub and run this script again"
+    echo ""
+    echo "Skipping Git SSH setup for now."
+    exit 0
+fi
+
+# Key exists, add to agent if not already there
+ssh-add -l | grep -q "id_ed25519" || ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+```
+
+### Trade-offs vs Full Automation
+
+**Pros:**
+- Simpler code (no backup/restore logic)
+- No assumptions about backup location
+- User controls restoration method
+- No state to manage
+- **Fully automated after initial setup** (once key exists and passphrase is in Keychain)
+
+**Cons:**
+- Requires one-time manual setup on new machines (restore key before first run)
+- **Not a real con for general-purpose tools**: Users have different backup strategies, so not hardcoding a specific backup location is actually the right design
+
 ## Files We DON'T Need to Touch
 
 ### `.git-credentials`
