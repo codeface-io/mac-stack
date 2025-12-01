@@ -7,8 +7,9 @@
 - [Anthropic Console](https://console.anthropic.com)
 - [OpenAI Console](https://platform.openai.com)
 
-## Niche Helper Apps
+## Niche Helpers
 
+- [Dark Mode Toggle for Brave Browser](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh) (Vertec and stuff ...)
 - [F-Secure (for VPN)](https://www.f-secure.com)
 - [Sound Control](https://staticz.com/soundcontrol/)
 - [loopback](https://rogueamoeba.com/loopback/)
