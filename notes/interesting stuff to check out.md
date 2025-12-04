@@ -45,6 +45,7 @@
 
 ## Other Software
 
+- [Fizzy (Team Task Manager)](https://www.fizzy.do/)
 - [ladybird.org (independent browser)](https://ladybird.org)
 - [mise.jdx.dev (macOS environment manager)](https://mise.jdx.dev)
 - [lazygit](https://github.com/jesseduffield/lazygit)
