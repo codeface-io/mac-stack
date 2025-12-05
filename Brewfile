@@ -20,6 +20,7 @@ cask "brave-browser"
 cask "eqmac" # equalizer because: 1) display speakers are boomy, 2) music
 
 # basic developer tools
+brew "zsh"             # but use this script shebang: #!/usr/bin/env zsh
 brew "git"             # just so it gets updated frequently
 cask "fork"            # graphical git client
 cask "raycast"         # THE macOS swiss army knife for productivity

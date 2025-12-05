@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 # This script updates the global git configuration
 
 set -e  # Exit on any error

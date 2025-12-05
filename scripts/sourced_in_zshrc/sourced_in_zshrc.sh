@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 # Get script directory (in a way that works when sourced rather than executed)
 export SCRIPT_DIR="$(dirname "${(%):-%x}")"

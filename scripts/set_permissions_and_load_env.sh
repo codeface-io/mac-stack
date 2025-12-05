@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 # This script sets safe file permissions and loads the .env file
 
 # Set safe permissions for project directory

@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 # This script installs/updates software outside the homebrew stack
 
 set -e  # Exit on any error

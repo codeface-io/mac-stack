@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 # You may use this script as a template to do necessary setup for CLI tools. Most prominently these will be exports of environment variables and similar.
 

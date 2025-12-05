@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 # This script updates the ~/.zshrc file with necessary configurations
 
 # Prepare

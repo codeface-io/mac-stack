@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 # This script installs/updates Homebrew and everything in Brewfile
 
 # Prepare

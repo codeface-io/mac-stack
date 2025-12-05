@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 # You may use this script as a template to customize the shell in general. It should not reference or set up anything personal or user-specific.
 

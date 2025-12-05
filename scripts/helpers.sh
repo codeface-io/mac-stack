@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 # Ensure given content exists in ~/.zshrc
 ensure_zshrc_content() {
