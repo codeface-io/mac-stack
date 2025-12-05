@@ -160,3 +160,18 @@ The only edge cases where it might "fail" are non-standard environments, like a 
 
 ---
 
+### Investigation
+
+**Date:** 2025-12-05
+
+**Subject:** Zsh Release Dates & Homebrew Necessity
+
+**Findings:**
+- **Zsh 5.9**: Released **May 14, 2022**.
+- **Zsh 5.10**: **Not yet released** as a stable version. The reference to "5.10" in the Sourceforge/GitHub `master` branch simply indicates the current development version. Homebrew correctly identifies 5.9 as the latest stable release.
+
+**Is Homebrew management worth it?**
+My analysis suggests **yes**, but not because of *current* version discrepancies.
+1.  **Parity (Current)**: Both macOS and Homebrew provide zsh 5.9.
+2.  **Velocity (Future)**: Zsh releases are infrequent (5.8 in 2020, 5.9 in 2022). However, when 5.10 *is* released, Homebrew will update within days. macOS updates typically lag by months or require a full OS upgrade.
+3.  **Isolation**: Using `/opt/homebrew/bin/zsh` ensures your shell isn't affected by Apple's future deprecations or system-specific patches.
