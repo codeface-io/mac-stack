@@ -11,9 +11,21 @@
     "workbench.editorAssociations": {},
     "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": false,
+    "workbench.statusBar.visible": false,
     "workbench.preferredLightColorTheme": "Default Light Modern",
     "workbench.preferredDarkColorTheme": "Default Dark Modern",
-    "workbench.statusBar.visible": false,
+    "workbench.colorCustomizations": {
+        "[Default Dark Modern]": {
+            "editor.background": "#000000",
+            "panel.background": "#101010",
+            "sideBar.background": "#101010"
+        },
+        "[Default Light Modern]": {
+            "editor.background": "#FFFFFF",
+            "panel.background": "#EFEFEF",
+            "sideBar.background": "#EFEFEF"
+        }
+    },
     // editor
     "editor.wordWrap": "on",
     "editor.wrappingIndent": "indent",
@@ -43,4 +55,5 @@
     "cursor.cpp.disabledLanguages": [],
     "cursor.composer.textSizeScale": 1.0,
     "cursor.composer.shouldAllowCustomModes": true
+    // added via IDE but not yet backed up:
 }
