@@ -9,7 +9,8 @@
 
 ## Niche Helpers
 
-- [Dark Mode Toggle for Brave Browser](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh) (Vertec and stuff ...)
+- [MagicMouseTap for "tap to click" on magic mouse](https://www.magicmousetap.com/)
+  - (stored as "MagicMouseMenuApp.dmg" in iCloud (and not here) because it's not available via Brew and did cost a dollar ...)
 - [F-Secure (for VPN)](https://www.f-secure.com)
 - [Sound Control](https://staticz.com/soundcontrol/)
 - [loopback](https://rogueamoeba.com/loopback/)
