@@ -2,8 +2,9 @@
 
 # You may use this script as a template to customize the shell in general. It should not reference or set up anything personal or user-specific.
 
-# nice prompt
-export PROMPT='🍏%1~: '
+# visually separate prompt/input/output. Error indication via Emoji.
+export PROMPT='%(?.🍏.🍎) %F{#00ffff}%2~%f: '
+zle_highlight=(default:fg=#ffff00)
 
 # Disable shell history file (~/.zsh_history) to keep home folder clean but also for privacy and security reasons
 HISTSIZE=10000  # allow in-memory history for current session
