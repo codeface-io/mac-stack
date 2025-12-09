@@ -29,11 +29,10 @@ It makes sense to build global navigation hot keys around the option key. The op
 | Calendar | ⌥C | Calendar |
 | Develop | ⌥D | Antigravity |
 | Email | ⌥E | Mail |
-| Finder | ⌥F | Finder |
+| Find(er) | ⌥F | Finder |
 | Git Client | ⌥G | Fork |
 | Hear | ⌥H | Podcasts |
 | Internet | ⌥I | Brave Browser |
-| Jot Down | ⌥J | Stickies |
 | Listen | ⌥L | Music |
 | Messenger | ⌥M | WhatsApp |
 | News | ⌥N | X Pro |
@@ -41,10 +40,10 @@ It makes sense to build global navigation hot keys around the option key. The op
 | Passwords | ⌥P | Passwords |
 | Reminders | ⌥R | Reminders |
 | System Settings | ⌥S | System Settings |
+| Teams | ⌥T | Microsoft Teams |
 | Write | ⌥W | Typora |
-| Xcode | ⌥X | Xcode |  
+| Xcodes | ⌥X | Xcodes App |  
 | YouTube | ⌥Y | YouTube Subscriptions |
-| Zühlke | ⌥Z | Microsoft Teams |
 | Terminal | ⌥⏎ | Warp |
 | Trash | ⌥⌫ | Open Trash |
 
