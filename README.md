@@ -88,6 +88,7 @@ Without customizing anything, the resulting setup will be as follows.
 
 ## To Do
 
+* The script for force adopting apps into Homebrew is essentially a PoC fix of our regular update procedure which apparently does not bring many casks properly into Homebrew if that software (mostly GUI apps) was already installed on the system outside of Homebrew. We should bring those checks into the regular update procedure.
 * generate symlinks to dotfiles dynamically during update, gitignore the symlinks (ignore everything in dotfiles folder that starts with a dot), symlinks cannot reference home folder via `~`
 * [Setup default SSH key](notes/feature_plans/ssh/) (for GitHub, GitLab etc.)
 * Automate ensuring that all needed repos are checked out (first very simply: hardcoded list of repo names, hardcoded repos path -> if repo folder does not exist create it and checkout the repo)
