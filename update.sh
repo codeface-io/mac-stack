@@ -1,4 +1,5 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
+
 # This script updates (sets up) this Mac
 
 # Prepare

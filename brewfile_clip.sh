@@ -1,4 +1,5 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
+
 # This script enforces the philosophy that every Homebrew package used must be declared explicitly in the Brewfile.
 
 # It uninstalls:
